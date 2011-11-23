@@ -1,0 +1,1252 @@
+body {
+	background-color: #333333;
+	border: 0;
+	background-position: top;
+	margin-top: 0;
+	padding-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin-left: 0px;
+	color: #FFFFFF;
+
+	}
+
+table td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	}
+	
+h1,h2,h3,h4,h5,h6 {
+	color: #ffffff;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	}
+
+p.bodytext	{
+	font-size: 13px;
+	}
+	
+#top {
+	border-top: 1px solid #555555;
+	}
+	
+#top, #data, #bottom {
+	border-right: 1px solid #555555;
+	border-left: 1px solid #555555;
+}
+
+#top, #data,#bottom {
+	background-color: #000000;
+	}
+		
+
+#bottom {
+	background-color: #231E0A;
+	font-size: 12px;
+	color: #FFFFFF;
+	}
+
+a {
+	color: #ff0000;
+	}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Menübereich / Navigation
+
+Link: 
+	  
+Benötigte Files:
+	  
+Typo-Settings:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#navi_bar_hor {
+	border-bottom: 1px solid #ff0000;
+	}
+	
+#navi_bar_hor td {
+	text-align: left;
+	vertical-align: middle;
+	background-color: #555555;
+	
+/*
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 1px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-top-color: #A3C1E0;
+	border-right-color: #A3C1E0;
+	border-bottom-color: #DEE9F3;
+	border-left-color: #A3C1E0;
+	border-bottom-style: solid;*/
+	padding-left: 4px;
+	}
+	
+#navi_bar_hor a {
+	text-decoration: none;
+	color: #ffffff;
+	padding-right: 3px;
+	}
+
+#navi_bar_hor span {	
+	padding-left: 10px;
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	margin-top: 12px;
+	}
+		
+	
+#navi_bar_hor a:hover {
+	text-decoration: underline;
+	}
+		
+
+#navi_bar_hor .menu1-level1-no {	
+	}
+
+#navi_bar_hor .menu1-level1-no a{
+	}
+	
+#navi_bar_hor .menu1-level1-act {
+	/*filter:alpha(opacity='70',style='0');*/
+	}
+
+#navi_bar_hor .menu1-level1-act a {
+	color: #FCEF31;
+	font-weight: bold;
+	}
+
+#navi_main {
+	}
+	
+#navi_main a {
+	font-size: 14px;
+	}
+
+#navi_print_link {
+	}	
+	
+#navi_language div {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	}
+	
+#navi_language div a{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	}	
+		
+#navi_language div img{
+	padding-top: 2px;
+	}	
+	
+.menu1-level2-no {
+	font-weight: normal;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	color: #000000;
+	background-color: #ffffff;
+
+}
+
+.menu1-level2-no a{
+	color: #000000;
+	}
+	
+.menu1-level2-act {
+	font-weight: bold;
+	padding-left: 15px;
+	color: #000000;
+	background-color: #ffffff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+
+.menu1-level2-act a{
+	color: #000000;
+	}
+	
+#navi_sub {
+	vertical-align: top;
+	padding-top: 12px;
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 12px;
+	padding-bottom: 20px;
+
+	}
+	
+#navi_sub DIV {
+	width: 95%;
+	}
+	
+#navi_sub DIV a {
+	color: navy;
+	text-decoration: none;
+
+	}
+	
+#navi_sub DIV a:hover {
+	text-decoration: underline;
+	}
+	
+#navi_sub DIV.menu1-level1-act a {
+	color:black;
+	}
+	
+#navi_sub DIV.menu1-level2-no {
+	padding-left:20px;
+	}
+	
+#navi_sub DIV.menu1-level2-act {
+	font-weight: bold;
+	padding-left: 20px;
+	}
+	
+
+	
+.menu2-level1-no {
+	margin-bottom: 7px;
+	}	
+	
+.menu2-level1-act {
+	margin-bottom: 7px;
+	}
+
+.menu2-level1-act a {
+	margin-bottom: 7px;
+
+	}
+
+/* Submenu - Ebene 1 */		
+#navi_sub .menu2-level1-no a{
+	color: #ffffff;
+	margin-bottom: 10px;
+	}
+
+#navi_sub .menu2-level1-no a:hover{
+	color: #ff0000;
+	}
+
+#navi_sub .menu2-level1-act a {
+	font-weight: bold;
+	color: #ffffff;
+	padding-bottom: 20px;
+	}
+	
+/* Submenu - Ebene 2 */		
+#navi_sub .menu2-level2-no a{
+	color: #FFFD99;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	}
+
+#navi_sub .menu2-level2-no a:hover{
+	color: #FFFD99;
+	padding-left: 10px;
+	}
+
+#navi_sub .menu2-level2-act a {
+	font-weight: bold;
+	color: #FFFD99;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	}
+
+/*---------------------------------------------------------------------------
+Dropdown-Bereich
+---------------------------------------------------------------------------*/
+
+/* Praktisch das Hauptmenü */
+.bc_dropdowntoptable {
+	}
+
+#Menubitconx0 , #Menubitconx1 , #Menubitconx2 , #Menubitconx3 , #Menubitconx4  {
+	}
+	
+#Menubitconx0 a, #Menubitconx1 a, #Menubitconx2 a, #Menubitconx3 a, #Menubitconx4 a, #Menubitconx5 a,#Menubitconx6 a,#Menubitconx7 a   {
+	padding: 2px 5px 2px 5px;
+	text-decoration: none;
+	color: #ffffff;
+	width: 150px;
+	/* border: 1px solid #000000; */
+	filter:alpha(opacity='70',style='0');
+	}
+
+
+#Menubitconx0 a:hover, #Menubitconx1 a:hover, #Menubitconx2 a:hover, #Menubitconx3 a:hover, #Menubitconx4 a:hover, #Menubitconx5 a:hover, #Menubitconx6 a:hover,#Menubitconx7 a:hover {
+	/* background-color: #E9EDF3; 
+	color: #000000;
+	*/
+	text-decoration: underline;
+	
+	/* border: 1px solid #A3B7D1; */
+	width: 150px;
+	padding: 2px 5px 2px 5px;
+	}
+/*---------------------------- DropDown ENDE ---------------------------------*/
+		
+	
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Menü ENDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*-----------------------------------------------------------------------------
+Datenbereich
+*/	
+		
+#data_left {
+	padding-left: 0px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+#data_left h1 {
+	font-weight: bold;
+	text-align: left;
+	vertical-align: bottom;
+	border: 0px;
+	margin-top: 0px; 
+	margin-bottom: 0px;
+	}
+
+#data_left p.bodytext	{
+	margin-top: 0px; 
+	margin-bottom: 10px;
+	}
+
+#block_left {
+	text-align: left;
+	vertical-align: top;
+	padding-left: 13px;
+	width: 150px;
+
+	}
+	
+
+#data_normal td {
+	margin-right: 10px;
+	text-align: left;
+	vertical-align: top;
+	}
+
+/*	
+#data_normal h1 {
+
+	}
+*/	
+
+
+#data_normal h1.csc-firstHeader	{
+	font-size: 18px;
+	color: #ffffff;
+	border-left: 2px none #006633;
+	border-top: 2px none #006633;
+	border-right: 2px none #006633;
+	border-bottom: 1px none #80272B;
+	margin-top: 10px; 
+	margin-bottom: 2px;
+	}
+	
+#data_normal a.csc-header {
+	font-size: 12px;
+	}
+	
+#data_normal p.bodytext	{
+	margin: 0px 10px 0px 0px;
+	}
+
+/*-----------------------------------------------------------------------------
+Impressum
+*/	
+
+td#impressum {
+	background-color: #000000;
+	font-size: 10px;
+	padding: 3px;
+	}
+
+#impressum td.left {
+	font-size: 10px;
+	color: #ffffff;
+	}
+#impressum td.right {
+	font-size: 10px;
+	color: #ffffff;
+	}
+
+#impressum a {
+	font-size: 9px;
+	color: #ffffff;
+	text-decoration: none;
+	}
+	
+/*-----------------------------------------------------------------------------
+Universelle Attribute / Klassen
+*/	
+.csc-firstHeader {
+	font-size: 18px;
+	font-weight: bold;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Schlagschatten für Bilder - FireFox
+
+Link: http://www.alistapart.com/articles/cssdropshadows/
+      http://nontroppo.org/test/shadow.html	
+	  	http://www.theshapeofdays.com/2005/11/my_contribution.html (auch mit IE)
+	  	
+Benötigte Files:
+	  shadowAlpa.png
+	  shadow.gif
+	  
+Typo-Settings:
+	  sind im "conf: Main Template cObject" zu machen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.imgtext-table {
+  	margin-right: 10px;
+	}
+
+	
+.bc_specialimage {
+  float: left;
+  background: url(/fileadmin/template/images/shadowAlpha.png) no-repeat bottom right !important;
+  background: url(/fileadmin/template/images/shadow.gif) no-repeat bottom right;
+  margin: 10px 0 0 10px !important;
+  margin: 10px 0 0 5px;
+  }
+
+.bc_specialimage img {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #8B8B8B;
+  margin: -6px 6px 6px -6px;
+  padding: 4px;
+  }
+ 
+/*
+.bc_specialimage img {
+	border-top: 1px solid #ff0000;
+	border-right: 1px solid #ff0000;
+	border-bottom: 1px solid #ff0000;
+	border-left: 1px solid #ff0000;
+	}
+*/
+	
+/*~ ENDE Schlagschatten ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Rahmenarten in Typo (Rechts bei Seitentyp)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Linie danach */
+.csc-frame-rulerAfter {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	height: 2px;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-top: 2px solid #4F8EB4;
+	border-right: 2px none #4F8EB4;
+	border-bottom: 2px none #4F8EB4;
+	border-left: 2px none #4F8EB4;
+	}
+
+/* Rahmen1 */
+.csc-frame-frame1 {
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #4F8EB4;
+	}
+	
+/* Rahmen1 */
+.csc-frame-frame1 p.bodytext {
+	margin-left: 100px;
+	}
+
+/* Unsichtbar */
+.csc-frame-invisible {
+	clear: both;
+	}	
+	
+/*~ ENDE Rahmenarten ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Standard-Tabellen
+
+Link: 
+	  
+Benötigte Files:
+	  
+Typo-Settings:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.contenttable {
+	border-top-width: 1px;
+	border-bottom-width: 3px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #659DBE;
+	border-bottom-color: #659DBE;
+	padding: 0px 5px;
+	width: 98%;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 1%;
+	margin-right: 1%;
+	font-size: 11px; 
+	}
+	
+.contenttable p {
+	margin: 1px;
+	padding: 1px;
+	}
+			
+tr .tr-0 {
+	background-color: #659DBE;
+	color: #ffffff;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BA9607;
+	}
+	
+.td-last {
+	text-align: left;
+	}
+	
+.tr-even {
+	background-color: #4B4D4E;
+	margin: 10px;
+	vertical-align: top;
+	}
+	
+td.contenttable {
+	margin: 2px 5px;
+	}
+
+.contenttable td {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+	
+.tr-odd {
+	vertical-align: top;
+	}
+	
+/*---------------------------------------------------------------------------
+Layout 1 - Hauptspalte links
+---------------------------------------------------------------------------*/
+.contenttable-1 .td-0 {
+	background-color: #659DBE;
+	color: #ffffff;
+	width: 150px;
+	font-weight: bold;
+	}
+
+.contenttable-1 .tr-0 {
+	background-color: #F0F5F9;
+	color: #000000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #BA9607;
+	font-weight: normal;
+	}
+
+/*~ Standard-Tabelle ENDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Downloadbereich
+
+Link: 
+	  
+Benötigte Files:
+	  
+Typo-Settings:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.csc-uploads {
+	border: 1px solid #B2B2B2;
+	padding: 5px;
+	width: 97%;
+	}
+
+.csc-uploads-fileName {
+	font-size: 12px;
+	width: 90%;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #B2B2B2;
+	padding-left: 8px;
+	}
+
+.csc-uploads-fileName p {
+	margin-top: 3px;
+	margin-bottom: 0px;
+	}
+		
+.csc-uploads-fileSize {
+	width: 50px;
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: top;
+	background-color: #B2B2B2;
+	padding-right: 8px;
+	}	
+	
+.csc-uploads-fileSize p {
+	font-size: 12px;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	text-align: right;
+	}
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Downloadbereich ENDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.csc-bulletlist-1 {
+	border: 1px solid #000;
+	margin-left: 5px;
+	width: 500px;
+	padding: 20px;
+	list-style: disc url(bullet.gif);
+	}
+	
+td#data_normal {
+	padding-bottom: 20px;
+	padding-left: 8px;
+	text-align: left;
+	vertical-align: top;
+	}
+	
+#block_left_top {
+	background-color: #4F8EB4;
+}
+
+#block_center_top {
+	padding-top: 15px;
+	padding-left: 8px;
+	}
+	
+#top_image1 {
+	text-align: right;
+	}
+	
+#top_image2 {
+	text-align: right;
+	}
+	
+#top_image3 {
+	text-align: right;
+	}
+	
+#top_image4 {
+	text-align: right;
+	}
+	
+#block_left_data {
+	padding-left: 8px;
+	}
+	
+#block_data_top {
+	padding-left: 8px;
+	width: 320px;
+	}
+	
+#text_top {
+	color: #7D7C82;
+	font-size: 27px;
+	font-weight: bold;
+	}
+#logo {
+	margin-right: 8px;
+	margin-top: 15px;
+}
+
+#impressum {
+	border-top: 1px solid #535353;
+	border-bottom: 3px solid #ff0000;
+}
+#block_left_top2 {
+	background-color: #4F8EB4;
+	}
+	
+#top_image_block {
+	text-align: left;
+	vertical-align: top;
+	height: 115px;
+	}
+
+
+
+	
+.csc--invisible {
+	margin-top: 20px;
+	}
+		
+#top_navi {
+	text-align: right;
+	vertical-align: bottom;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Anfrageformular
+
+Link: 
+	  
+Benötigte Files:
+	  
+Typo-Settings:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+table.csc-mailform {
+	border-top: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	background-color: #313131;
+	margin-top: 15px;
+	text-align: left;
+	vertical-align: top;
+	padding: 2px;
+	width: 95%;
+	font-size: 12px; 
+	}
+
+.csc-mailform td {
+	background-color: #363636;
+	margin-top: 20px;
+	text-align: left;
+	vertical-align: top;
+	padding: 3px;
+	font-size: 12px; 
+	}
+
+.csc-form-main-label td {
+	background-color: #F2E495;
+	height: 10px;
+	font-weight: bold;
+	color: #004831;
+	border-top: 1px solid #E4C71B;
+	border-bottom: 1px solid #E4C71B;
+	padding: 3px;
+	padding-left: 4px;
+	font-size: 12px; 
+	}	
+	
+.csc-form-labelcell {
+	margin-top: 0px; 
+	text-align: left;
+	vertical-align: top;
+	font-size: 12px; 
+	}	
+
+p.csc-form-label-req {
+	text-align: left;
+	vertical-align: top;
+	color: #ff0000;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px; 
+	}
+	
+.csc-form-label {
+	text-align: left;
+	vertical-align: top;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px; 
+	}
+		
+.csc-form-fieldcell {
+	text-align: left;
+	vertical-align: top;
+	font-size: 12px; 
+	}	
+	
+.csc-form-fieldcell-checkbox {
+	}
+	
+	
+.csc-form-chechbox-row	{
+	}
+	
+.csc-form-field-checkbox {
+	}
+
+.csc-form-label-checkbox {
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ Anfrageformular ENDE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Formatierung f. Referenzliste
+
+Link: http://typo3.org/documentation/document-library/gst_selectpro/Introduction-8176989a4f/
+	  
+Benötigte Plugins:
+	  gst_selectpro
+	  
+Typo-Settings:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#reflist {
+	}
+	
+#reflist td {
+	padding: 3px;
+	}
+
+/* wird im Template definiert */		
+td.reflist_headline {
+	background-color : #A3B7D1;
+	}
+			
+.reflist_name {
+	font-size : 12px;
+	color : #3D577A;
+	font-weight : bold;
+	float: left;
+	}
+
+.reflist_address {
+	}
+
+.reflist_zip {
+	display: inline;
+	}
+
+.reflist_city {
+	}
+
+.reflist_country {
+	padding-bottom: 10px;
+	}
+
+.reflist_link {
+	}
+
+.reflist_image {
+	}
+	
+.reflist_description {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	}
+
+/* "name" ist auf float left */		
+.reflist_tstamp {
+	font-size : 10px;
+	text-align: right;
+	color: #ffffff;
+	}
+
+/* Klassenname wurde in TS eingestellt */	
+.reflist_pageprowser a {
+	text-decoration: none;
+	}
+/*~~~~~~~~~~~~~~~~~~~~~~~~ Referenzliste ENDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Punkteformatierung (Userlayout)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+	
+.punkte {
+	background-color: #ff0000;
+	/*background-image: url(/fileadmin/template/images/punkthoriz.jpg);*/
+	height: 1px;
+	font-size: 1px;
+	background-repeat: repeat-x;
+	background-position: center;
+}
+.einzelpunkthoriz {
+	/* 
+	background-image: url(../images/punkteinzel10.jpg);
+	font-size: 10px;
+	background-repeat: repeat-x;
+	background-position: 10px;*/
+	border-bottom: 1px solid #535353;
+	}
+.grauepunkte {
+	background-image: url(/fileadmin/template/images/doppelpunktgrau.jpg);
+	background-repeat: repeat-x;
+	background-color: #D6DADE;
+	font-size: 3px;
+}
+
+.punkterechtsmenu {
+	/*background-image: url(/fileadmin/template/images/punkteinzelrechts5.jpg);
+	background-repeat: repeat-y;
+	background-position: right;*/
+	width: 7px;
+	border-left: 1px solid #535353;
+	background-color: #000000;
+}
+/*~ Punktformatierung ENDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Formatierung f. LoginBox
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#loginbox {
+	width: 550px;
+	margin: 100px auto;
+	background-color: #ffffff;
+	border: 1px solid #ACACAC;
+	}
+
+#loginbox .intranet {
+	border-right: 1px solid #ACACAC;
+	}
+	
+.csc-loginform {
+	padding: 10px 0 0 20px;
+	}
+	
+/* Erscheint als Fehldermeldung wenn Rahmen 2 gewählt wurde */
+.csc-frame-frame2 {
+	border: 1px dashed #ff0000;
+	background-color: #F4F3F2;
+	padding: 0 10px 10px 10px;
+	width: 400px;
+	margin: 15px auto 15px auto;
+	}
+		
+#loginbox #data_normal {
+	padding-left: 15px;
+	}		
+/*~ ENDE Formatierung f. CLoginBox ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Zusatzformartierungen - DAM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file:hover,
+.mm-dam-row-container:hover {
+	background-color: #444701;
+	}
+
+.mm-dam-row-container {
+	font-size: 11px;
+	}
+
+.mm-dam-row-container {
+	height: 90px;
+	}
+/* --- TABS --- */
+	
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell {
+	background-color: #7A7A7A;
+	border: 1px solid #585858;
+	}
+	
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell a {
+	color: #ffffff;
+	}	
+
+.tx-mmdamfilelist-pi1-modeselector div.tx-mmdamfilelist-pi1-modeSelector-SCell {
+	padding-right: 10px;
+	}
+	
+.tx-mmdamfilelist-pi1-title {
+	background-color: none;
+	}
+
+/*~ ENDE Zusatzformartierungen - DAM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~ ENDE Zusatzformartierungen - DAM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Zusatzformartierungen - Forum
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#tx_chcforum-pi1 {
+	width: 95%;
+	}
+
+.tx-chcforum-pi1-preTableWrap {
+	border: 1px solid #999999;
+}
+
+.tx-chcforum-pi1-postTableWrap {
+	border: 1px solid #999999;
+}
+
+/* GENERIC TABLE BEGIN */
+.tx-chcforum-pi1-Table {
+	border: 1px solid #666666;
+}
+
+.tx-chcforum-pi1-Table thead tr th {
+	background: #555555;
+}
+
+/* category title row */
+.tx-chcforum-pi1-Table tbody tr th {
+	background: #676767;
+}
+
+
+.tx-chcforum-pi1-catConferenceCell dd.new {
+	color: #FF0000;
+}
+
+.tx-chcforum-pi1-confThreadNew {
+	color: #FF0000;
+}
+
+.tx-chcforum-pi1-navPath a {
+	color: #ffffff;
+}
+
+.tx-chcforum-pi1-navPath {
+	background: #737373;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+.tx-chcforum-pi1-pageLinksTop, .tx-chcforum-pi1-pageLinksBtm {
+	background: #737373;
+	border-bottom: 1px solid #DEDEDE;
+	color: #ffffff;
+}
+
+.tx-chcforum-pi1-postForm {
+	border: 1px solid #999999;
+	background: #969696;
+}
+
+.tx-chcforum-pi1-postForm #formWhere {
+	background: #555555;
+	border: 1px solid #999999;
+}
+
+.tx-chcforum-pi1-postForm fieldset label {
+	display: block;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 3px;
+	width: 60px;
+	float: left;
+}
+
+.tx-chcforum-pi1-postForm fieldset {
+	background-color: #737373;
+}
+
+.tx-chcforum-pi1-postForm fieldset#formTop legend {
+	background-color: #737373;
+	border: 1px solid #999999;
+}
+
+.tx-chcforum-pi1-postForm fieldset#formBottom legend {
+	background-color: #737373;
+	border: 1px solid #999999;
+}
+
+
+.tx-chcforum-pi1-postForm fieldset#formTop input {
+	border: 1px solid #DEDEDE;
+}
+
+.tx-chcforum-pi1-postForm textarea {
+	border: 1px solid #DEDEDE;
+}
+
+.tx-chcforum-pi1-formBtn input {
+	border: 1px solid #999999;
+	background-color: #FFF;
+}
+
+.tx-chcforum-pi1-formBtnHov {
+	border: 1px solid #666; 
+	background-color: #FFF;
+	color: #CC0000;
+}
+
+.tx-chcforum-pi1-formBtnStyle {
+	background-color: #FFF;
+	border: 1px solid #666666;
+}
+
+.tx-chcforum-pi1-formBtnStyleHov {
+	background-color: #FFF;
+	border: 1px solid #C00;
+	color: #CC0000;
+}
+
+/* SINGLE POST BEGIN */
+.tx-chcforum-pi1-singlePost {
+	border: 1px solid #666666;
+}
+
+/* top */
+.tx-chcforum-pi1-singlePost .author {
+	background: #969696;
+}
+
+.tx-chcforum-pi1-singlePost .userPic {
+	border: 1px solid #666666;
+}
+/* deprecated */
+.tx-chcforum-pi1-singlePost #userPic {
+	border: 1px solid #666666;
+}
+
+/* middle */
+.tx-chcforum-pi1-singlePost .text {
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	background: #969696;
+}
+
+.tx-chcforum-pi1-singlePost .scroller {
+	background: #CACACA;
+}
+
+/* bottom */
+.tx-chcforum-pi1-singlePost .edit {
+	background: #676767;
+}
+
+.tx-chcforum-pi1-singlePost .attachment {
+	background: #7C7C7C;
+}
+
+.tx-chcforum-pi1-singlePost .rate {
+	background: #7C7C7C;
+	border-top: 3px solid #FFFFFF ;
+}
+
+.tx-chcforum-pi1-singlePost .rate input {
+	background-color: #FFF;
+	border: 1px solid #666666;
+}
+
+.tx-chcforum-pi1-singlePost .rate select {
+	border: 1px solid #666666;
+}
+
+
+.tx-chcforum-pi1-singlePost .codeCell {
+	color: #006600;
+	background-color: #FAFAFA; 
+	border: #D1D7DC; 
+}
+
+.tx-chcforum-pi1-singlePost .quoteCell {
+	background-color: #B7B7B7;
+	border: 1px dotted #8D8D8D; 
+}
+
+.tx-chcforum-pi1-singlePostQuoteText {
+	background-color: #FAFAFA;
+	border: 1px solid #666666;
+	font-size: 10px;
+	padding: 5px;
+}
+
+.tx-chcforum-pi1-footerBox {
+	background: #555555;
+	border: 1px solid #999999;
+}
+
+.header_small {
+	border: solid #666666 1px;
+}
+
+.tx_chcforum-pi1-toolBar {
+	background: #969696;
+	border: 1px solid #666666;
+}
+
+.tx_chcforum-pi1-subToolBar {
+	background: #7C7C7C;
+}
+
+
+/* PROFILE BEGIN */
+.tx-chcforum-pi1-profileBorder {
+	border: 1px solid #999999;
+}
+
+.tx-chcforum-pi1-profileBorder #userPic {
+	border: 1px solid #666666;
+}
+
+.tx_chcforum-pi1-profileHdrBig {
+	background: #7C7C7C;
+	border: 1px solid #666666;
+}
+
+.tx_chcforum-pi1-profile_hdr {
+  background: #969696;
+}
+
+/* MESSAGE BOX BEGIN */
+.tx-chcforum-pi1-errorBoxCell {
+	background: #969696;
+}
+
+.tx-chcforum-pi1-messageBoxErrorNoBorder {
+	background: #FFD6EF;
+}
+
+.tx-chcforum-pi1-messageBox, .tx-chcforum-pi1-messageBoxError {
+	background: #FFCCCC;
+	border: 1px solid #CF1127;
+	color: #CF1127;
+}
+
+.tx-chcforum-pi1-helpBox {
+	background-color: #737373 !important;
+}
+
+.tx-chcforum-pi1-linkUp {
+	background: #7C7C7C;
+	border-bottom: 1px solid #DEDEDE;
+}
+
+.tx-chcforum-pi1-previewBoxCell {
+	background: #555555;
+}
+
+
+
+#tx_chcforum-pi1 .tx-chcforum-pi1-Table .tx-cwtcommunity-pi1 th {
+	background: #969696;
+}
+
+#tx_chcforum-pi1 .tx-chcforum-pi1-Table .tx-cwtcommunity-pi1 th,
+.tx-chcforum-pi1-errorBoxCell,
+.tx_chcforum-pi1-toolBar,
+.tx-chcforum-pi1-singlePost .text ,
+.tx-chcforum-pi1-singlePost .author ,
+.tx-chcforum-pi1-singlePost .text ,
+.tx_chcforum-pi1-toolBar ,
+.tx_chcforum-pi1-profile_hdr ,
+.tx-chcforum-pi1-errorBoxCell,
+.tx-chcforum-pi1-Table tbody tr td,
+#tx_chcforum-pi1 .tx-chcforum-pi1-Table .tx-cwtcommunity-pi1 th {
+	background: #8D8D8D;
+}
+
+/*~ ENDE Zusatzformartierungen - Forum ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

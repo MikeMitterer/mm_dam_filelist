@@ -1,0 +1,83 @@
+<!--###TEMPLATE_DEFAULT### begin
+	Help template for the default language, english
+-->
+<!--###BIG_PREVIEW### begin -->
+---- START ---<br>
+###BIG_PREVIEW_IMAGE###
+<br>----- STOP ---
+<!--###BIG_PREVIEW### end -->
+
+<!-- ModeSelector (Categories) -->
+<!--###MODE_SELECTOR### begin -->
+<div ###MODESELECTORCLASS###>
+	<!--###SELECTOR### begin -->
+	<!-- Grapic-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	-->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	<!--###SELECTOR### end -->
+</div>
+<!--###MODE_SELECTOR### end -->
+
+<!-- OrderSelector -->
+<!--###ORDER_SELECTOR### begin -->
+<div ###ORDERSELECTORCLASS###>
+	<!--###SELECTOR### begin -->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	<!-- Text-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	-->
+	<!--###SELECTOR### end -->
+</div>
+<!--###ORDER_SELECTOR### end -->
+
+<!-- ViewSelector -->
+<!--###VIEW_SELECTOR### begin -->
+<div ###VIEWSELECTORCLASS###>
+	<!--###SELECTOR_TOPLIST### begin -->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	<!-- Text-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	-->
+	<!--###SELECTOR_TOPLIST### end -->
+	<!--###SELECTOR_LIST### begin -->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	<!-- Text-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	-->
+	<!--###SELECTOR_LIST### end -->
+	<!--###SELECTOR_TREE### begin -->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	<!-- Text-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	-->
+	<!--###SELECTOR_TREE### end -->
+</div>
+<!--###VIEW_SELECTOR### end -->
+<table border="0" cellspacing="0" cellpadding="0">
+  <!--###LIST_HEADER### begin -->
+  <tr ###HEADERCLASS###> 
+    <td>###HEADER_UID###&nbsp;</td><!-- looks for listFieldHeader_uid in locallang.php -->
+    <td>###HEADER_FILE_NAME###&nbsp;</td>
+  </tr>
+  <!--###LIST_HEADER### end -->
+  <!--###LIST_ROW### begin -->
+  <tr###ROWCLASS###> 
+  	<!--###LIST_COL### begin -->
+    <td ###FILE_NAME_CLASS###>###FILE_NAME###&nbsp;</td>
+    <td ###TITLE_CLASS###>
+    <div>Filename: ###TITLE###.###FILE_TYPE###&nbsp;</div>
+    <div>Category: ###CATTITLE###&nbsp;</div>
+    <div ###FILESIZE_CLASS###>Filesize: ###FILE_SIZE###&nbsp;</div><br>
+    <div ###DATE_MOD_CLASS###>Date-Mod: ###DATE_MOD###&nbsp; (TS (setup.txt) for format)</div><br>
+    <div ###FILE_PATH_CLASS###>Foldername: ###FILE_PATH###&nbsp;</div><br>
+    <div ###DESCRIPTION_CLASS###>###DESCRIPTION###</div><br>
+    <div ###ZIPLINK_CLASS###>###ZIPLINK###</div>
+    <div ###NORMALLINK_CLASS###>###NORMALLINK###</div>
+    </td>
+    ###EDITPANEL### 
+  	<!--###LIST_COL### end -->
+  </tr>
+  <!--###LIST_ROW### end -->
+</table>
+<!--###TEMPLATE_DEFAULT### end -->

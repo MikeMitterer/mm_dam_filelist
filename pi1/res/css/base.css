@@ -1,0 +1,428 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Plugin - DAM FileList
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* 	On a float-Layout it can be nessecary to enable
+	this property!
+*/
+/*
+.tx-mmdamfilelist-pi1 {
+	float: right;
+	}
+*/	
+.tx-mmdamfilelist-pi1-image img {
+	border: 1px solid #8B8B8B; 
+	padding: 4px;
+	}
+
+.tx-mmdamfilelist-pi1-table	{
+	width: 90%;
+	border: 1px solid #E8E8E8;
+	margin-left: 40px;
+	}
+	
+
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-title, 
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-cattitle,
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-file_type {
+	font-weight: bold;
+	}
+    	
+.tx-mmdamfilelist-pi1-table td {
+	padding: 10px;
+	}	
+
+	
+.tx-mmdamfilelist-pi1-table .tx-mmdamfilelist-pi1-title {
+	text-align: left;
+	vertical-align: top;
+	}
+
+.tx-mmdamfilelist-pi1-table .tx-mmdamfilelist-pi1-title a {
+	color: #000000;
+	margin:5px 0 5px 0;
+	padding: 2px 3px 2px 4px;
+	text-decoration: none;
+	background: #C2C2C2;
+	display: block;
+	border-left: 1px solid #E0E0E0;
+	border-top: 1px solid #E0E0E0;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	}
+	
+.tx-mmdamfilelist-pi1-table .tx-mmdamfilelist-pi1-title a:hover{
+	text-decoration: underline;
+	}
+
+.tx-mmdamfilelist-pi1-file_name {
+	text-align: left;
+  }
+
+/*
+.tx-mmdamfilelist-pi1-file_name img {
+	float: left;
+  }
+*/
+  
+.tx-mmdamfilelist-pi1-modeSelector table{
+	padding: 0px;
+	margin: 0px;
+	}  
+
+.tx-mmdamfilelist-pi1-modeSelector-SCell a {
+	text-decoration: none;
+	}
+
+.tx-mmdamfilelist-pi1-modeSelector-SCell a:hover {
+	text-decoration: underline;
+	}
+	
+.tx-mmdamfilelist-pi1-viewselector div {
+	padding-right: 10px;
+	}
+	
+.tx-mmdamfilelist-pi1-orderselector div,
+	.tx-mmdamfilelist-pi1-viewselector div,
+	.tx-mmdamfilelist-pi1-modeSelector div {
+	display: inline;
+	}	
+	
+/* --- TABS --- */
+.tx-mmdamfilelist-pi1-modeselector {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	}
+	
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell {
+	background-color: #e4ebf1;
+	border: 1px solid #a7d4df;
+	border-bottom-width: 0px;
+	padding: 2px 1em 2px 1em;
+	text-decoration: none;
+	display: inline;
+	}
+	
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell a {
+	color: #728799;
+	}	
+	
+.tx-mmdamfilelist-pi1-orderselector .selector-element-n1,
+.tx-mmdamfilelist-pi1-orderselector .selector-element-n3,
+.tx-mmdamfilelist-pi1-orderselector .selector-element-n5 {
+	padding-right: 10px;
+	}
+	
+/*-------------------------------------------------------------------------
+* Tree-View
+*/
+
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-folder a {
+	text-decoration: none;
+}
+
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-folder img{
+	padding-left: 10px;
+	vertical-align: middle;
+	}
+	
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-linktext {
+	display: inline;
+	padding-left: 10px;
+	}
+
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-even {
+	background-color: #FBFBFB;
+	}
+
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file {
+	/*width: 700px;*/
+	padding-left: 20px;
+	}
+	
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file:hover,
+.mm-dam-row-container:hover {
+	background-color: #FFFFDD;
+	}
+	
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file img{
+	float: left;
+	vertical-align: middle;
+	padding: 2px;
+	}
+
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file_name, 
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file_size_kb, 
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file_mtime_mdy,
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-normal_link a,
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-zip_link a
+	{
+	float: left;
+	padding: 5px;
+	text-align: left;
+	border-right: 1px solid #E7E7E7;
+	text-decoration: none;
+	}
+	
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file_name {
+	}
+	
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file_size_kb {
+	width: 100px;
+	}	
+	
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-file_mtime_mdy {
+	width: 100px;
+	}
+
+.tx-mmdamfilelist-pi1-tree .tx-mmdamfilelist-pi1-zip_link a {
+	text-decoration: none;
+	}
+	
+/*-------------------------------------------------------------------------
+* List-View - Lines (hoover)
+*/
+
+.mm-dam-row-container {
+	border: 1px solid #B9B9B9; 
+	margin-bottom: 5px;
+	/*font-size: 11px;*/
+	/*width: 100%;*/
+	float:left;
+	margin-right: 0.5em;
+	}
+	
+.mm-dam-row-container td.col-prevcontainer {
+	border-right: 1px solid #B9B9B9;
+	padding: 3px;
+	}
+	
+.mm-dam-row-container td.col-details-btn {
+	text-align: right;
+	padding: 0.5em;
+	text-align: right;
+	width: 60px;
+	}
+		
+.mm-dam-row-container td {
+	text-align: left;
+	vertical-align: top;
+	}	
+
+.mm-dam-row-visible-container {
+	margin-left: 12px;
+	}
+	
+.mm-dam-row-visible-container td {
+	padding: 3px;
+	}
+	
+.mm-dam-row-container dd {
+	padding: 0px 0px 0px 13px;
+	margin: 0px 0px 0px 0px;
+	}
+	
+.mm-dam-row-datacontainer {
+	width: 100%;
+	}
+	
+.mm-dam-row-datacontainer dl,
+.mm-dam-row-datacontainer dt {
+	/*display: inline;*/
+	}	
+	
+.mm-dam-row-container dt {
+	padding: 0px 0px 0px 8px;
+	margin: 0px 0px 0px 0px;
+	}
+	
+.col-prevcontainer {
+	width:	120px;
+	padding: 3px;
+	margin: 0;
+	}	
+
+.tx-mmdamfilelist-pi1-preview {
+	text-align: center;
+	vertical-align: middle;
+	}
+	
+.mm-dam-row-visible-container {
+	width: 100%;
+	}
+		
+.mm-dam-row-hidden-container {
+	width: 100%;
+	margin: 3px 3px 3px 12px;
+	}
+		
+.mm-dam-row-hidden-container div.tx-mmdamfilelist-pi1-description {
+	clear: both;
+	}
+			
+.linkcontainer .left {
+	float: left;
+	}
+			
+.linkcontainer .left,
+.linkcontainer .right {
+	display: inline;
+	/*width: 40%;*/
+	}
+	
+.linkcontainer .right {
+	/* float: right;*/
+	float: left;
+	}	
+	
+.linkcontainer .left,
+.linkcontainer .left a{
+	text-align: left;
+	padding: 5px 5px 5px 0px ;
+	}	
+
+.linkcontainer .right,
+.linkcontainer .right a {
+	text-align: right;
+	padding: 5px 0px 5px 5px ;
+	}	
+	
+.tx-mmdamfilelist-pi1-more a {
+	text-decoration: none;
+	}
+	
+ .tx-mmdamfilelist-pi1  .tx-mmdamfilelist-pi1-col-empty {
+ 	visibility: hidden;
+ 	}
+ 	
+.tx-mmdamfilelist-pi1 div.tx-mmdamfilelist-pi1-listrow-even,
+.tx-mmdamfilelist-pi1 div.tx-mmdamfilelist-pi1-listrow-even {
+	}
+
+/** gallery*/
+.tx-mmdamfilelist-pi1 .col-navicontainer {
+	text-align: center;
+	}
+	
+.tx-mmdamfilelist-pi1 .clearer {
+	clear:both;
+	font-size:1px;
+	line-height:1px;
+	display:block;
+	height:1px;
+	}		
+
+/*-------------------------------------------------------------------------
+* Browse-Box
+*/
+
+.tx-mmdamfilelist-pi1 .browseBoxWrap	{
+	margin-left: 40px;
+	margin-right: auto;
+	/*font-size: 12px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	clear: both;
+	}
+
+.tx-mmdamfilelist-pi1 .browseBoxWrap	a {
+	text-decoration: none;
+	}
+	
+.tx-mmdamfilelist-pi1 .browseBoxWrap a:hover {
+	text-decoration: underline;
+	}
+	
+.tx-mmdamfilelist-pi1 .browseBoxWrap .activeLinkWrap	{
+	font-weight: normal;
+	/*font-size: 14px;*/
+	font-weight: bold;
+	}
+	
+/*-------------------------------------------------------------------------
+* Single-View - (Detail-View)
+*/
+
+.tx-mmdamfilelist-pi1-singleview table {
+	width: 98%;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .line,
+.tx-mmdamfilelist-pi1-singleview dt {
+	clear: both;
+	}
+
+
+.tx-mmdamfilelist-pi1-singleview .line div {
+	float: left;
+	}
+
+.tx-mmdamfilelist-pi1-singleview .line .label {
+	width: 22%;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .line .label,
+.tx-mmdamfilelist-pi1-singleview .line .value,	
+.tx-mmdamfilelist-pi1-singleview .tx-mmdamfilelist-pi1-value,
+#data_normal .tx-mmdamfilelist-pi1-singleview .line-first td {
+	padding: 0.3em;
+	}	
+
+.tx-mmdamfilelist-pi1-singleview .description {
+	width: 75%;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .description p.bodytext {
+	padding: 0;
+	margin: 0;
+	}
+
+.tx-mmdamfilelist-pi1-singleview .tx-mmdamfilelist-pi1-value,	
+.tx-mmdamfilelist-pi1-singleview .line .value {
+	border-left: 1px solid #CDCDCD;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .toggle, 
+.mm-dam-row-container .toggle {
+	background: transparent url('/typo3conf/ext/mm_dam_filelist/pi1/res/images/default/toggle/open.gif')  .25em .25em no-repeat;
+	text-indent: 20px;
+	cursor:pointer;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .toggle.closed,
+.mm-dam-row-container .toggle.closed {
+	background: transparent url('/typo3conf/ext/mm_dam_filelist/pi1/res/images/default/toggle/closed.gif') .25em .25em no-repeat;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .hidden,
+.mm-dam-row-container .hidden {
+	display:none;
+	}	
+	
+.tx-mmdamfilelist-pi1-singleview dt {
+	font-weight: bold;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .even td,
+.tx-mmdamfilelist-pi1-singleview .odd td {
+	margin: 3px;
+	background-color: #dfdfdf;
+	border: 1px solid #CDCDCD;
+	}
+		
+.tx-mmdamfilelist-pi1-singleview .even td{
+	background-color: #ffffff;
+	}	
+	
+.tx-mmdamfilelist-pi1-singleview div.big_preview_image {
+	float: none;
+	text-align: center;
+	}	
+
+/*  .big_preview_image 
+#data_normal .tx-mmdamfilelist-pi1-singleview .line-first td {
+	text-align: center;
+	}	
+*/	
+/*~ DAM FileList ENDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/	
+  

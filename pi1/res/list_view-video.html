@@ -1,0 +1,115 @@
+<!--###TEMPLATE_DEFAULT### begin
+	Help template for the default language, english
+-->
+<!--###BIG_PREVIEW### begin -->
+---- START ---<br>
+###BIG_PREVIEW_IMAGE###
+<br>----- STOP ---
+<!--###BIG_PREVIEW### end -->
+
+<!-- ModeSelector (Categories) -->
+<!--###MODE_SELECTOR### begin -->
+<div ###MODESELECTORCLASS###>
+	
+	<script type="text/javascript">
+		function onSelectModeCombo(combo) {
+		  var urlFromCombo = combo.options[combo.selectedIndex].value;
+		  //alert(urlFromCombo);
+		  if(urlFromCombo != '') window.location.href = urlFromCombo;   
+		}
+	</script>
+	
+	<div class="label">###LABEL###</div>
+	<select size="1" ###MODESELECTORCLASS### onChange="javascript:onSelectModeCombo(this);">
+		<!--###SELECTOR### begin -->
+			<option value="###SELECTOR_ELEMENT_HREF###" ###SELECTOR_ELEMENT_CLASS### ###SELECTED###>###SELECTOR_ELEMENT_TEXT###
+		<!--###SELECTOR### end -->
+	</select>
+</div>
+<!--###MODE_SELECTOR### end -->
+
+<!-- OrderSelector -->
+<!--###ORDER_SELECTOR### begin -->
+<div ###ORDERSELECTORCLASS###>
+	<!--###SELECTOR### begin -->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	<!-- Text-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	-->
+	<!--###SELECTOR### end -->
+</div>
+<!--###ORDER_SELECTOR### end -->
+
+<!-- ViewSelector -->
+<!--###VIEW_SELECTOR### begin -->
+<div ###VIEWSELECTORCLASS###>
+	<!--###VIEWSELECTORELEMENTS### begin -->
+		<!--###SELECTOR_TOPLIST### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_TOPLIST### end -->
+		<!--###SELECTOR_LIST### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_LIST### end -->
+		<!--###SELECTOR_TREE### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_TREE### end -->
+	<!--###VIEWSELECTORELEMENTS### end -->	
+</div>
+<!--###VIEW_SELECTOR### end -->
+<div class="dam_listview_container">
+
+  <!--###LIST_HEADER### begin -->
+  <div ###HEADERCLASS###> 
+    <div>###HEADER_UID###</div><!-- looks for listFieldHeader_uid in locallang.php -->
+    <div>###HEADER_FILE_NAME###</div>
+  </div>
+  <!--###LIST_HEADER### end -->
+
+  <!--###LIST_ROW### begin -->
+  <div ###ROWCLASS###>
+   
+  	<!--###LIST_COL### begin -->
+  	<div ###COLCLASS###><!-- negativ value means empty col -->
+	  	<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-gal-item-container" style="width: ###COL_WIDTH###;">
+	  	<tr class="mm-dam-row-container-row">
+			<td><div class="col-prevcontainer">
+					###GREYBOX###
+					<div class="col-linksdetails">
+						<div ###NORMALLINK_CLASS###>###NORMALLINK###</div>
+						<div ###ZIPLINK_CLASS###>###ZIPLINK###</div>
+						<div ###DETAILS_CLASS###>###DETAILS###</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="col-additionaldata-container">
+				<div ###TITLE_CLASS###>###TITLE###</div>
+				<div ###DESCRIPTION_CLASS###>###DESCRIPTION###</div>
+				<!-- <dl><dt class="toggle closed"> --><!-- toggle - visible part -->
+				<!-- </dt><dd> --><!-- toggle - hidden part start -->
+				<!-- </dd></dl> --><!-- toggle - hidden part end -->
+			</td>
+		</tr>
+		</table>
+  	</div>
+  	<!--###LIST_COL### end -->
+  </div><br class="clearer clearer2"/>
+  <!--###LIST_ROW### end -->
+</div>
+<!--###GREYBOXTEMPLATE### begin -->
+					<a href="#" onClick="return showPage('###SCRIPT###?filename=###FILE_NAME###&filepath=###FILE_PATH###&width=###VIDEO_WIDTH###&height=###VIDEO_HEIGHT###','###VIDEO_TITLE###',###BOX_WIDTH###,###BOX_HEIGT###)">
+				 		<div ###PREVIEW_CLASS###>###PREVIEW###</div>
+					</a>
+<!--###GREYBOXTEMPLATE### end -->
+
+<!--###TEMPLATE_DEFAULT### end -->

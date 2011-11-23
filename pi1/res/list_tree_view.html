@@ -1,0 +1,89 @@
+<!--###TEMPLATE_DEFAULT### begin
+	Help template for the default language, english
+	
+-->
+<!--
+Valid placeholders: (UP_FOLDER,UP_FOLDER_DISABLED,FOLDER)
+###CURRENT_FOLDER###	- The current path 
+###HREF_BEGIN### 		- The beginning of the link to the next folder
+###HREF_END###			- End of the link
+###HREFZIP_BEGIN### 	- The beginning of the ZIP-link to the next folder
+###HREFZIP_END###		- End of the ZIP-link
+###FOLDER_NAME###		- Name of the next dir-level
+###LINK_TEXT###			- Normaly the last part of the ###FOLDER_NAME### 
+###CLASS_NAME###		- Gives you a prefix for your classname (something like: tx-mmdamfilelist-pi1- )
+###EXTENSION_IMAGE###	- If a image exists for the extension - the path to to image will be replaced
+###EVEN_ODD###			- Will be replaced with even oder odd
+
+// FILE
+###LINK_TEXT###			- The Filename
+###<fieldname from DAM-Table>### - All fields from the DAM-Table are valid placeholders
+-->
+<!--###TREE### begin -->
+<div class="###CLASS_NAME###tree">
+###CURRENT_FOLDER###<br>
+	<!--###DIR_STRUCT### begin -->
+	<!--###UP_FOLDER### begin -->
+		###HREF_BEGIN###
+		<div class="###CLASS_NAME###up-folder">
+		###EXTENSION_IMAGE###
+		</div>
+		###HREF_END###
+	<!--###UP_FOLDER### end -->
+	<!--###UP_FOLDER_DISABLED### begin -->
+		<div class="###CLASS_NAME###up-folder">
+		###EXTENSION_IMAGE###
+		</div>
+	<!--###UP_FOLDER_DISABLED### end -->
+	<!--###FOLDER### begin -->
+		<div class="###CLASS_NAME###folder">
+		###HREF_BEGIN###
+		###EXTENSION_IMAGE###<div class="###CLASS_NAME###linktext">###LINK_TEXT###</div>
+		###HREF_END###
+		</div>
+	<!--###FOLDER### end -->
+	<!--###FILE### begin -->
+		<div class="###CLASS_NAME###file ###CLASS_NAME######EVEN_ODD###">
+		###HREF_BEGIN###
+		###EXTENSION_IMAGE###
+			<div class="###CLASS_NAME###file_name">###TITLE###</div>
+			<div class="###CLASS_NAME###file_size_kb">###FILE_SIZE_KB### KB</div>
+			<div class="###CLASS_NAME###file_mtime_mdy">###FILE_MTIME_DMY###</div>
+			<!-- If you uncomment this - remove HREF_BEGIN and HREF_END
+			<div class="###CLASS_NAME###normal_link">###NORMALLINK###</div>
+			<div class="###CLASS_NAME###zip_link">###ZIPLINK###</div>
+			-->
+			<br clear="all" />
+		###HREF_END###
+		</div>
+	<!--###FILE### end -->
+	<!--###DIR_STRUCT### end -->
+</div>
+<!--###TREE### end -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <!--###LIST_HEADER### begin -->
+  <tr ###HEADERCLASS###> 
+    <td>###HEADER_UID###&nbsp;</td>
+    <td>###HEADER_NAME###&nbsp;</td>
+    <td>###HEADER_SHORTTEXT###&nbsp;</td>
+  </tr>
+  <!--###LIST_HEADER### end -->
+  <!--###LIST_ROW### begin -->
+  <tr###ROWCLASS###> 
+  	<!--###LIST_COL### begin -->
+    <td ###FILE_NAME_CLASS###>###FILE_NAME###&nbsp;</td>
+    <td ###TITLE_CLASS###>
+    <div>Filename: ###TITLE###.###FILE_TYPE###&nbsp;</div>
+    <div>Category: ###CATTITLE###&nbsp;</div>
+    <div ###FILE_SIZE_CLASS###>Filesize: ###FILE_SIZE###&nbsp;</div><br>
+    <div ###DESCRIPTION_CLASS###>###DESCRIPTION###</div><br>
+    <div ###ZIPLINK_CLASS###>###ZIPLINK###</div>
+    <div ###NORMALLINK_CLASS###>###NORMALLINK###</div>
+    </td>
+    ###EDITPANEL### 
+  	<!--###LIST_COL### end -->
+  </tr>
+  <!--###LIST_ROW### end -->
+</table>
+<!--###TEMPLATE_DEFAULT### end -->

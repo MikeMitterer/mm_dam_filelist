@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>DBFields</description>
+        <type>database</type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_content.list_type_pi1">MM DAM FE FileList</label>
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category">DAM Category:</label>
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category_remark">Remark:</label>            
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category_remark_text">Categories will be ignored in the "Tree-View"</label>            
+            <label index="tt_content.pi_flexform.sheet_main">Main settings</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_listview">Add modeswitch for ListView:</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_toplistview">Add modeswitch for TOP-ListView:</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_category">Add modeswitch for Category:</label>
+            <label index="tt_content.pi_flexform.sheet_main.remark_amc"></label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_treeview">Add modeswitch for TreeView:</label>
+            <label index="tt_content.pi_flexform.sheet_main.remark_ms_mustbeon"></label>
+            <label index="tt_content.pi_flexform.sheet_main.show_filter">Show filter combo</label>
+            <label index="tt_content.pi_flexform.sheet1">Category</label>
+            <label index="tt_content.pi_flexform.sheet2">List-View</label>
+            <label index="tt_content.pi_flexform.sheet_tree">Tree-View</label>
+            <label index="tt_content.pi_flexform.sheet3">Images</label>
+            <label index="tt_content.pi_flexform.use_always_mime_type_images">Use alwas MIME-Preview-Images:</label>
+            <label index="tt_content.pi_flexform.label.view_modes">View mode:</label>
+            <label index="tt_content.pi_flexform.label.view_modes.mode0">List</label>
+            <label index="tt_content.pi_flexform.label.view_modes.mode1">Tree</label>
+            <label index="tt_content.pi_flexform.label.show_data_in_tree_style">Show data in "tree-style": </label>
+            <label index="tt_content.pi_flexform.label.listview_templatefile">Template: </label>
+            <label index="tt_content.pi_flexform.label.results_at_a_time">Results at a time: </label>
+            <label index="tt_content.pi_flexform.label.max_pages">MAX Pages: </label>
+            <label index="tt_content.pi_flexform.label.cols_on_page">Cols on page: </label>
+            <label index="tt_content.pi_flexform.label.col_width_style">Cols width: </label>
+            <label index="tt_content.pi_flexform.label.show_search_box">Show search box: </label>
+            <label index="tt_content.pi_flexform.label.show_mode_selector">Show mode selector: </label>
+            <label index="tt_content.pi_flexform.label.show_order_selector">Show order selector: </label>
+            <label index="tt_content.pi_flexform.label.show_browser_results">Show browser results: </label>
+            <label index="tt_content.pi_flexform.label.show_empty_page_if_no_pivars">Show first page as empty page (no query): </label>
+            <label index="tt_content.pi_flexform.label.allow_caching">Turn caching on: </label>
+            <label index="tt_content.pi_flexform.label.show_header">Show header: </label>
+            <label index="tt_content.pi_flexform.label.dont_link_active_page">Don't link active page: </label>
+            <label index="tt_content.pi_flexform.label.show_first_last">Show first / last: </label>
+            <label index="tt_content.pi_flexform.label.preview_width">Width: </label>
+            <label index="tt_content.pi_flexform.label.preview_height">Height: </label>
+            <label index="tt_content.pi_flexform.label.preview_max_w">Preview max W: </label>
+            <label index="tt_content.pi_flexform.label.preview_max_h">Preview max H: </label>
+            <label index="tt_content.pi_flexform.label.secure_filename">Secure filename: </label>
+            <label index="tt_content.pi_flexform.label.basepath_for_folders">Base path for DAM-folder: </label>
+            <label index="tt_content.pi_flexform.label.treeview_templatefile">Template: </label>
+            <label index="tt_content.pi_flexform.label.make_popup">Make popup: </label>
+            <label index="tt_content.pi_flexform.label.popup_image_w">Popup image W: </label>
+            <label index="tt_content.pi_flexform.label.popup_image_h">Popup image H: </label>
+            <label index="tt_content.pi_flexform.label.js_window_expand">Popup expand W,H: </label>
+            <label index="tx_dam_item.keywords">Keywords:</label>
+            <label index="tx_dam_item.description">Description:</label>
+            <label index="tx_dam_item.title">Titel:</label>
+            <label index="tx_dam_item.big_preview_image">Preview image:</label>
+            <label index="tx_dam_item.ziplink">As ZIP file</label>
+            <label index="tx_dam_item.normallink">Download this file</label>
+            <label index="tt_content.pi_flexform.show_download_link">Show "Download" link:</label>
+            <label index="tt_content.pi_flexform.show_zip_link">Show "Download as ZIP" link:</label>
+            <label index="tt_content.pi_flexform.show_details_link">Show "Details" link:</label>
+            <label index="tt_content.pi_flexform.sheet_single">Single-View</label>
+            <label index="tt_content.pi_flexform.label.singleview_templatefile">Template: </label>
+            <label index="tt_content.pi_flexform.sheet_listview.single_pid">Single-View: </label>
+            <label index="tx_mmdamfilelist_address_name">Name from TT-Address: </label>
+            <label index="tt_content.pi_flexform.sheet_address">Address</label>
+            <label index="tt_content.pi_flexform.label.address_pid">Sysfolder with address data:</label>
+			<label index="tx_dam.tx_mmdamfilelist_altpreview">Alternativ preview:</label>
+			<label index="tx_dam.tx_mmdamfilelist_oldfilehash">Old file hash:</label>
+			<label index="tx_dam.tab.entry">MM DAM Filelist</label>
+			<label index="tt_content.pi_flexform.sheet_video">Video</label>
+            <label index="tt_content.pi_flexform.label.script">Script:</label>
+            <label index="tt_content.pi_flexform.label.video_width">Width:</label>
+            <label index="tt_content.pi_flexform.label.video_height">Height:</label>
+            <label index="tt_content.pi_flexform.label.video_title">Title:</label>
+            <label index="tt_content.pi_flexform.label.box_width">Box width:</label>
+            <label index="tt_content.pi_flexform.label.box_height">Box height:</label>
+		</languageKey>
+        <languageKey index="de" type="array">
+            <label index="tt_content.list_type_pi1">MM DAM FE FileListe</label>
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category">DAM Kategorie:</label>
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category_remark">Anmerkung:</label>            
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category_remark_text">Kategorieen werden in der "Tree-Ansicht" ignoriert</label>            
+            <label index="tt_content.pi_flexform.sheet_main">Basiseinstellungen</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_listview">Modeswitch für Listen-Ansicht:</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_toplistview">Modeswitch für TOP-Listen-Ansicht:</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_category">Modeswitch für Kategorie-Ansicht:</label>
+            <label index="tt_content.pi_flexform.sheet_main.remark_amc"></label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_treeview">Modeswitch für Tree-Ansicht:</label>
+            <label index="tt_content.pi_flexform.sheet_main.remark_ms_mustbeon"></label>
+            <label index="tt_content.pi_flexform.sheet_main.show_filter">Adress-Combobox anzeigen:</label>
+            <label index="tt_content.pi_flexform.sheet1">Kategorie</label>
+            <label index="tt_content.pi_flexform.sheet2">Listen-Ansicht</label>
+            <label index="tt_content.pi_flexform.sheet_tree">Tree-Ansicht</label>
+            <label index="tt_content.pi_flexform.sheet3">Bilder</label>
+            <label index="tt_content.pi_flexform.use_always_mime_type_images">Immer MIME-Vorschaubilder verenden:</label>
+            <label index="tt_content.pi_flexform.label.view_modes">Ansichten modus:</label>
+            <label index="tt_content.pi_flexform.label.view_modes.mode0">Liste</label>
+            <label index="tt_content.pi_flexform.label.view_modes.mode1">Tree</label>
+            <label index="tt_content.pi_flexform.label.show_data_in_tree_style">Daten im "Tree-Stil": </label>
+            <label index="tt_content.pi_flexform.label.listview_templatefile">Template: </label>
+            <label index="tt_content.pi_flexform.label.results_at_a_time">Anzahl der Ergebnisse: </label>
+            <label index="tt_content.pi_flexform.label.max_pages">Maximalanzal Seiten: </label>
+            <label index="tt_content.pi_flexform.label.cols_on_page">Spalten pro Seite: </label>
+            <label index="tt_content.pi_flexform.label.col_width_style">Spaltenbreite: </label>
+            <label index="tt_content.pi_flexform.label.show_empty_page_if_no_pivars">Erste Seite leer (keine DB anfrage): </label>
+            <label index="tt_content.pi_flexform.label.show_search_box">Suchfeld anzeigen: </label>
+            <label index="tt_content.pi_flexform.label.show_mode_selector">Modebutton anzeigen: </label>
+            <label index="tt_content.pi_flexform.label.show_order_selector">Sortierbutton anzeigen: </label>
+            <label index="tt_content.pi_flexform.label.show_browser_results">Browse-Ergebnisse anzeigen: </label>
+            <label index="tt_content.pi_flexform.label.show_header">Header anzeigen: </label>
+            <label index="tt_content.pi_flexform.label.allow_caching">Caching eingschalten: </label>
+            <label index="tt_content.pi_flexform.label.dont_link_active_page">Aktive Seite nicht verlinken: </label>
+            <label index="tt_content.pi_flexform.label.show_first_last">Anfange / Ende Anzeigen: </label>
+            <label index="tt_content.pi_flexform.label.preview_width">Width: </label>
+            <label index="tt_content.pi_flexform.label.preview_height">Height: </label>
+            <label index="tt_content.pi_flexform.label.preview_max_w">Vorschau max B: </label>
+            <label index="tt_content.pi_flexform.label.preview_max_h">Vorschau max H: </label>
+            <label index="tt_content.pi_flexform.label.secure_filename">Sicherer Filename: </label>
+            <label index="tt_content.pi_flexform.label.basepath_for_folders">DAM-Basispfad: </label>
+            <label index="tt_content.pi_flexform.label.treeview_templatefile">Template: </label>
+            <label index="tt_content.pi_flexform.label.make_popup">Popup erstellen: </label>
+            <label index="tt_content.pi_flexform.label.popup_image_w">Popup-Bild B: </label>
+            <label index="tt_content.pi_flexform.label.popup_image_h">Popup-Bild H: </label>
+            <label index="tt_content.pi_flexform.label.js_window_expand">Popupausdehnung B,H: </label>
+            <label index="tx_dam_item.keywords">Schlüsselwörter:</label>
+            <label index="tx_dam_item.description">Beschreibung:</label>
+            <label index="tx_dam_item.title">Titel:</label>
+            <label index="tx_dam_item.big_preview_image">Vorschaubild:</label>
+            <label index="tx_dam_item.ziplink">Als ZIP-File</label>
+            <label index="tx_dam_item.normallink">Herunterladen</label>
+            <label index="tt_content.pi_flexform.show_download_link">"Download" link anzeigen:</label>
+            <label index="tt_content.pi_flexform.show_zip_link">"Download as ZIP" link anzeigen:</label>
+            <label index="tt_content.pi_flexform.show_details_link">Show "Details" link:</label>
+            <label index="tt_content.pi_flexform.sheet_single">Detail-Ansicht</label>
+            <label index="tt_content.pi_flexform.label.singleview_templatefile">Template: </label>
+            <label index="tt_content.pi_flexform.sheet_listview.single_pid">Detail-Ansicht: </label>
+            <label index="tx_mmdamfilelist_address_name">Name aus TT-Address: </label>
+            <label index="tt_content.pi_flexform.sheet_address">Adresse</label>
+            <label index="tt_content.pi_flexform.label.address_pid">Ordner mit Adressdaten::</label>
+			<label index="tx_dam.tx_mmdamfilelist_altpreview">Alternative Vorschau:</label>
+			<label index="tx_dam.tx_mmdamfilelist_oldfilehash">Alter file hash:</label>
+			<label index="tx_dam.tab.entry">MM DAM Filelist</label>
+			<label index="tt_content.pi_flexform.sheet_video">Video</label>
+            <label index="tt_content.pi_flexform.label.script">Script:</label>
+            <label index="tt_content.pi_flexform.label.video_width">Breite:</label>
+            <label index="tt_content.pi_flexform.label.video_height">Höhe:</label>
+            <label index="tt_content.pi_flexform.label.video_title">Titel:</label>
+            <label index="tt_content.pi_flexform.label.box_width">Box-Breite:</label>
+            <label index="tt_content.pi_flexform.label.box_height">Box-Höhe:</label>
+        </languageKey>
+		<languageKey index="fr" type="array">
+            <label index="tt_content.list_type_pi1">MM DAM FE FileList</label>
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category">Catégorie DAM :</label>
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category_remark">Remarque :</label>            
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category_remark_text">Categories ignorées en vue arborescente</label>            
+            <label index="tt_content.pi_flexform.sheet_main">Paramètres principaux</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_listview">Utiliser le changement de mode en vue liste :</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_toplistview">Utiliser le changement de mode en vue top-liste :</label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_category">Utiliser le changement de mode pour les catgéories :</label>
+            <label index="tt_content.pi_flexform.sheet_main.remark_amc"></label>
+            <label index="tt_content.pi_flexform.sheet_main.add_modeswitch_treeview">Utiliser le changement de mode en vue arborescente :</label>
+            <label index="tt_content.pi_flexform.sheet_main.remark_ms_mustbeon"></label>
+            <label index="tt_content.pi_flexform.sheet1">Categorie</label>
+            <label index="tt_content.pi_flexform.sheet2">Vue liste</label>
+            <label index="tt_content.pi_flexform.sheet_tree">Vue arborescente</label>
+            <label index="tt_content.pi_flexform.sheet3">Images</label>
+            <label index="tt_content.pi_flexform.use_always_mime_type_images">Toujours utiliser MIME-Preview-Images:</label>
+            <label index="tt_content.pi_flexform.label.view_modes">Mode de visualisation:</label>
+            <label index="tt_content.pi_flexform.label.view_modes.mode0">Liste</label>
+            <label index="tt_content.pi_flexform.label.view_modes.mode1">Arborescence</label>
+            <label index="tt_content.pi_flexform.label.show_data_in_tree_style">Affichage de données en arborescence : </label>
+            <label index="tt_content.pi_flexform.label.listview_templatefile">Gabarits : </label>
+            <label index="tt_content.pi_flexform.label.results_at_a_time">Resultats simultanés : </label>
+            <label index="tt_content.pi_flexform.label.max_pages">Nb pages MAX : </label>
+            <label index="tt_content.pi_flexform.label.cols_on_page">Colonnes par page : </label>
+            <label index="tt_content.pi_flexform.label.col_width_style">Largeur colonnes : </label>
+            <label index="tt_content.pi_flexform.label.show_search_box">Afficher champ recherche: </label>
+            <label index="tt_content.pi_flexform.label.show_mode_selector">Afficher sélecteur de mode : </label>
+            <label index="tt_content.pi_flexform.label.show_order_selector">Afficher sélecteur d'ordre: </label>
+            <label index="tt_content.pi_flexform.label.show_browser_results">Afficher pagination des résultats : </label>
+            <label index="tt_content.pi_flexform.label.show_empty_page_if_no_pivars">Afficher la première page vide (pas de requête): </label>
+            <label index="tt_content.pi_flexform.label.allow_caching">Activer le cache : </label>
+            <label index="tt_content.pi_flexform.label.show_header">Afficher entête : </label>
+            <label index="tt_content.pi_flexform.label.dont_link_active_page">ne pas lier les pages actives : </label>
+            <label index="tt_content.pi_flexform.label.show_first_last">Afficher premier / dernier : </label>
+            <label index="tt_content.pi_flexform.label.preview_width">Largeur : </label>
+            <label index="tt_content.pi_flexform.label.preview_height">Hauteur : </label>
+            <label index="tt_content.pi_flexform.label.preview_max_w">Largeur maxi prévisualisation: </label>
+            <label index="tt_content.pi_flexform.label.preview_max_h">Hauteur maxi prévisualisation: </label>
+            <label index="tt_content.pi_flexform.label.secure_filename">Nom de fichier sécurisé : </label>
+            <label index="tt_content.pi_flexform.label.basepath_for_folders">chemin de base du dossier DAM : </label>
+            <label index="tt_content.pi_flexform.label.treeview_templatefile">Gabarit : </label>
+            <label index="tt_content.pi_flexform.label.make_popup">Utiliser popup: </label>
+            <label index="tt_content.pi_flexform.label.popup_image_w">Largeur image popup: </label>
+            <label index="tt_content.pi_flexform.label.popup_image_h">Hauteur image popup: </label>
+            <label index="tt_content.pi_flexform.label.js_window_expand">Expansion popup Largeur,Hauteur: </label>
+            <label index="tx_dam_item.keywords">Mots-clés:</label>
+            <label index="tx_dam_item.description">Déscription:</label>
+            <label index="tx_dam_item.title">Titre:</label>
+            <label index="tx_dam_item.big_preview_image">Prévisualisation:</label>
+            <label index="tx_dam_item.ziplink">Fichier ZIP</label>
+            <label index="tx_dam_item.normallink">Télécharger ce fichier</label>
+            <label index="tt_content.pi_flexform.show_download_link">Afficher lien "Télécharger" :</label>
+            <label index="tt_content.pi_flexform.show_zip_link">Afficher lien "Fichier ZIP" :</label>
+            <label index="tt_content.pi_flexform.show_details_link">Afficher lien "Détails" :</label>
+            <label index="tt_content.pi_flexform.sheet_single">Vue simple</label>
+            <label index="tt_content.pi_flexform.label.singleview_templatefile">Gabarit: </label>
+            <label index="tt_content.pi_flexform.sheet_listview.single_pid">Vue simple: </label>
+        </languageKey>        
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="tt_content.list_type_pi1" type="integer">109914120</label>
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category" type="integer">28658114</label>
+            <label index="tt_content.pi_flexform.sheet1" type="integer">61717939</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="tt_content.tx_mmdamfilelist_mm_dam_category" type="integer">28658114</label>
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+        <languageKey index="de" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>

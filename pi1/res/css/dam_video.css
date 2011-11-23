@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+
+.tx-mmdamfilelist-pi1 .tx-mmdamfilelist-pi1-preview {
+	text-align:left;
+	}	
+	
+.tx-mmdamfilelist-pi1 .mm-dam-gal-item-container {
+	float:left;
+	/*
+	width: 140px;
+	margin-right: 1em;
+	*/
+}
+
+.tx-mmdamfilelist-pi1 .col-prevcontainer {
+	padding-bottom: 0;
+	}
+	
+.tx-mmdamfilelist-pi1 .col-linksdetails {
+	text-align: right;
+	}
+	
+.tx-mmdamfilelist-pi1 .col-linksdetails div {
+	display: inline;
+	}
+	
+.tx-mmdamfilelist-pi1 .col-additionaldata-container	.tx-mmdamfilelist-pi1-title {
+	text-align: left;
+	font-weight: bold;
+	color: #3F3F3F;
+	margin-top: 0;
+	}
+	
+.tx-mmdamfilelist-pi1 .mm-dam-row-container-row .tx-mmdamfilelist-pi1-image img {
+	background-color: #cccccc;
+	padding: 3px;
+	}	
+
+.tx-mmdamfilelist-pi1 .mm-dam-row-container-row .tx-mmdamfilelist-pi1-image img:hover {
+	background-color: #eeeeee;
+	}	
+	
+.tx-mmdamfilelist-pi1 .col-additionaldata-container p.bodytext {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	color: #666666;
+	}
+
+.tx-mmdamfilelist-pi1  .tx-mmdamfilelist-pi1-title {
+	}
+	
+.tx-mmdamfilelist-pi1  .tx-mmdamfilelist-pi1-description {
+	padding-bottom: 1em;
+	}
+
+.tx-mmdamfilelist-pi1  .col-additionaldata-container{
+	padding: 0 0.5em 0 0.5em;
+	}
+
+/* Reset base settings */
+.tx-mmdamfilelist-pi1-modeselector {
+	padding: 0;
+	}
+		
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell {
+	background-color:	transparent;
+	border-style: none;
+	display: block;
+	padding: 0;
+	text-decoration:none;
+	}
+
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell {
+	background-color: transparent;
+	border-style: none;
+	}	
+	
+body#mmdamvideopage {
+	padding: 0;
+	margin: 0;
+	}
+
+#GB_window {
+	background-color: #000000;
+	}	
+/*-------------------------------------------------------------------------
+* Details
+*/
+
+
+
+/* -- Ende Details --------------------------------------------------- */
+

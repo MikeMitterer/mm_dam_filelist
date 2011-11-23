@@ -1,0 +1,56 @@
+//-------------------------------------------------------------------
+// Settings for Layout V (video)
+//
+
+plugin.tx_mmdamfilelist_pi1 {
+	order = date_cr:1
+	}
+	
+plugin.tx_mmdamfilelist_pi1 {
+	additionalHeaderData.1 = pi1/res/javascript/jquery-1.3.2.min.js
+	additionalHeaderData.2 = pi1/res/javascript/greybox/greybox.js
+	additionalHeaderData.3 = pi1/res/javascript/greybox/catalog.js
+
+	additionalHeaderData.5 = pi1/res/css/base.css
+	additionalHeaderData.6 = pi1/res/css/dam_video.css
+	additionalHeaderData.7 = pi1/res/javascript/greybox/greybox.css
+	}	
+	
+
+plugin.tx_mmdamfilelist_pi1.typodbfield {
+	file_mtime {
+		strftime = %d.%m.%Y
+		}
+		
+   }
+   
+plugin.tx_mmdamfilelist_pi1.listView.templateFile = list_view-video.html   
+plugin.tx_mmdamfilelist_pi1.singleView.templateFile = single_view-gallery.html
+   
+plugin.tx_mmdamfilelist_pi1.typodbfield {
+	ziplink {
+		value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/gallery_download_zip.jpg" border="0" alt="Download as ZIP-File" title="Download as ZIP-File"/> 
+		}
+
+	normallink {
+		value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/gallery_download_normal.jpg" border="0" alt="Download" title="Download"/> 
+		}
+
+	details {
+		labelStdWrap.cObject.value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/gallery_details.jpg" border="0" alt="Details" title="Details"/>
+		labelStdWrap.cObject.data >
+		}
+
+	// Remove the underline if you want to have a preview picture
+	preview {
+	  	imageLinkWrap = 0
+	  	imageLinkWrap >
+		}
+	
+	}  
+	
+plugin.tx_mmdamfilelist_pi1._LOCAL_LANG.de {
+	instructions = Verwendung:
+}	 
+
+

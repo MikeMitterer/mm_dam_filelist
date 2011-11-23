@@ -1,0 +1,69 @@
+/*
+http://www.just2b.com/mein-typo3/css-ts-menues/vertikales-dropdown-menue.html
+*/
+
+#menu-vert ul#nav,
+#menu-vert ul#nav ul {
+	margin: 0;
+	padding: 0;
+	width: 170px; /* Width of Menu Items */
+	border-bottom: 1px solid #ccc;
+	background: #fff; /* IE6 Bug */
+	color: black;
+	font-size: 100%;
+	}
+ 
+#menu-vert ul#nav li {
+	position: relative;
+	list-style: none;
+	}
+ 
+#menu-vert ul#nav li a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	background-color: #B1B1B1;
+	}
+	
+ 
+/* Fix IE. Hide from IE Mac \*/
+* html #menu-vert ul#nav li { float: left; height: 1%; }
+* html #menu-vert ul#nav li a { height: 1%; }
+/* End */
+ 
+#menu-vert ul#nav ul {
+	position: absolute;
+	display: none;
+	left: 169px; /* Set 1px less than menu width */
+	top: 0;
+	}
+ 
+#menu-vert ul#nav li ul li a { padding: 2px 5px; } /* Sub Menu Styles */
+ 
+#menu-vert ul#nav li:hover ul ul,
+#menu-vert ul#nav li:hover ul ul ul,
+#menu-vert ul#nav li.over ul ul,
+#menu-vert ul#nav li.over ul ul ul { display: none; } /* Hide sub-menus initially */
+ 
+#menu-vert ul#nav li:hover ul,
+#menu-vert ul#nav li li:hover ul,
+#menu-vert ul#nav li li li:hover ul,
+#menu-vert ul#nav li.over ul,
+#menu-vert ul#nav li li.over ul,
+#menu-vert ul#nav li li li.over ul { display: block; } /* The magic */
+ 
+#menu-vert ul#nav li.menuparent { background: transparent url(arrow.gif) right center no-repeat; }
+ 
+#menu-vert ul#nav li.menuparent:hover,
+#menu-vert ul#nav li.over { 
+	background-color: #B1B1B1; 
+}
+ 
+ 
+#menu-vert ul#nav li a:hover { 
+	color: #ff0000; 	
+}
+ 

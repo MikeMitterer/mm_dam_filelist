@@ -1,0 +1,126 @@
+<!--###TEMPLATE_DEFAULT### begin
+	Help template for the default language, english
+-->
+<!--###BIG_PREVIEW### begin -->
+---- START ---<br>
+###BIG_PREVIEW_IMAGE###
+<br>----- STOP ---
+<!--###BIG_PREVIEW### end -->
+
+<!-- ModeSelector (Categories) -->
+<!--###MODE_SELECTOR### begin -->
+<div ###MODESELECTORCLASS###>
+	<!--###SELECTOR### begin -->
+	<!-- Grapic-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	-->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>&nbsp;
+	<!--###SELECTOR### end -->
+</div>
+<!--###MODE_SELECTOR### end -->
+
+<!-- OrderSelector -->
+<!--###ORDER_SELECTOR### begin -->
+<div ###ORDERSELECTORCLASS###>
+	<!--###SELECTOR### begin -->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	<!-- Text-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	-->
+	<!--###SELECTOR### end -->
+</div>
+<!--###ORDER_SELECTOR### end -->
+
+<!-- ViewSelector -->
+<!--###VIEW_SELECTOR### begin -->
+<div ###VIEWSELECTORCLASS###>
+	<!--###VIEWSELECTORELEMENTS### begin -->
+		<!--###SELECTOR_TOPLIST### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_TOPLIST### end -->
+		<!--###SELECTOR_LIST### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_LIST### end -->
+		<!--###SELECTOR_TREE### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_TREE### end -->
+	<!--###VIEWSELECTORELEMENTS### end -->	
+</div>
+<!--###VIEW_SELECTOR### end -->
+<div class="dam_listview_container">
+  <!--###LIST_HEADER### begin -->
+  <div ###HEADERCLASS###> 
+    <div>###HEADER_UID###</div><!-- looks for listFieldHeader_uid in locallang.php -->
+    <div>###HEADER_FILE_NAME###</div>
+  </div>
+  <!--###LIST_HEADER### end -->
+  <!--###LIST_ROW### begin -->
+  <div ###ROWCLASS###> 
+  	<!--###LIST_COL### begin -->
+  	<div ###COLCLASS###><!-- negativ value means empty col -->
+  	<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-row-container" style="width: ###COL_WIDTH###;">
+  	<tr class="mm-dam-row-container-row">
+		<td class="col-prevcontainer">
+		    <div ###PREVIEW_CLASS### id="mmdam-prev-id-###PUREUID###">###PREVIEW###</div>
+		    <!-- 
+		    <div class="tx-mmdamfilelist-pi1-preview" id="mmdam-prev-id-###PUREUID###">###PROGRESSBAR###</div>
+		    <script type="text/javascript" charset="UTF-8">/* <![CDATA[ */ xajax_ajaxGetPreview('mmdam-prev-id-###PUREUID###','###FILE_PATH###'+'###FILE_NAME###');	/* ]]> */ </script>
+		     --> 
+		</td>
+		<td class="col1">
+			<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-row-datacontainer">
+			<tr>
+				<td class="col0">
+					<dl><dt class="toggle closed"><!-- toggle - visible part -->
+						<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-row-visible-container">
+						<tr>
+							<td class="col-filename">
+								<span ###TITLE_CLASS###>###TITLE###</span> / <span ###CATTITLE_CLASS###>###CATTITLE###</span>
+								<div ###FILE_MTIME_CLASS###>###FILE_MTIME###</div>									
+							</td>
+							<td class="col-details-btn">
+								<span ###DETAILS_CLASS###>###DETAILS###</span>
+							</td>
+						</tr>
+						</table>	
+					</dt><dd><!-- toggle - hidden part start -->
+						<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-row-hidden-container"><tr>
+							<td class="col0">
+								<div ###FILE_SIZE_CLASS###>###FILE_SIZE###</div>
+								<div ###FILE_TYPE_CLASS###>###FILE_TYPE###</div>
+								<!-- 
+								<div class="linkcontainer">
+									<span class="left"><div ###ZIPLINK_CLASS###>###ZIPLINK###</div></span>
+									<span class="right"><div ###NORMALLINK_CLASS###>###NORMALLINK###</div></span>
+								</div>
+								 -->
+								<div class="linkcontainer1">
+									<div ###ZIPLINK_CLASS###>###ZIPLINK###</div>
+									<div ###NORMALLINK_CLASS###>###NORMALLINK###</div>
+									<!-- <div ###PREVNORMALLINK_CLASS###>###PREVNORMALLINK###</div> -->
+								</div>
+								<div ###DESCRIPTION_CLASS###>###DESCRIPTION###</div>
+							</td>
+						</tr></table>
+					</dd></dl><!-- toggle - hidden part end -->
+				</td>
+			</tr>	
+			</table>
+		</td>
+	</tr>
+	</table>
+  	</div>
+  	<!--###LIST_COL### end -->
+  </div><br class="clearer"/>
+  <!--###LIST_ROW### end -->
+</div>
+<!--###TEMPLATE_DEFAULT### end -->

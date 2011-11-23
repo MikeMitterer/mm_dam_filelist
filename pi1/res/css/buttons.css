@@ -1,0 +1,45 @@
+/*-------------------------------------------------------------------------
+* Buttons - MM DAM Filelist
+*/
+
+.mm-dam-row-container .tx-mmdamfilelist-pi1-normallink a,
+.tx-mmdamfilelist-pi1-singleview .ziplink a,
+.tx-mmdamfilelist-pi1-singleview .normallink a,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-ziplink a,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-details a {
+	  color: #ffffff;
+      background-Color: #9A9A9A;
+      border-left: 1px solid #CCCCCC;
+      border-top: 1px solid #CCCCCC;
+      border-right: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+      text-decoration: none;
+      text-align: center;
+      padding: 2px 8px 2px 8px;
+      }
+      
+.mm-dam-row-container .tx-mmdamfilelist-pi1-normallink a:hover,
+.tx-mmdamfilelist-pi1-singleview .ziplink a:hover,
+.tx-mmdamfilelist-pi1-singleview .normallink a:hover,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-ziplink a:hover,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-details a:hover   {
+      background-color: #A3A3A3;
+      border-left: 1px solid #000000;
+      border-top: 1px solid #000000;
+      border-right: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      text-decoration: none;
+      }
+	
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-ziplink a,
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-normallink a {
+	width: 70px;
+	display: block;
+	}
+	
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-ziplink,
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-normallink {
+	padding-top: 0.5em;
+	}
+
+	

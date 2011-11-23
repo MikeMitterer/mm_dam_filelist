@@ -1,0 +1,96 @@
+//-------------------------------------------------------------------
+// Settings for Layout IV (address) (www.Rohloff.de - Thank you!)
+//
+
+plugin.tx_mmdamfilelist_pi1 {
+	order = date_cr:1
+	}
+	
+plugin.tx_mmdamfilelist_pi1 {
+	#additionalHeaderData = pi1/res/css/base.css
+	additionalHeaderData.1 = pi1/res/css/base.css
+	additionalHeaderData.2 = pi1/res/css/rohloff.css
+	additionalHeaderData.3 = pi1/res/css/address.css
+	}
+
+plugin.tx_mmdamfilelist_pi1.typodbfield {
+	file_mtime {
+		strftime = %d.%m.%Y
+		}
+		
+	file_ctime < .file_mtime
+	file_ctime.field = file_ctime
+	
+	date_cr < .file_mtime
+	date_cr.field = date_cr
+	
+	date_mod < .file_mtime
+	date_mod.field = date_mod
+   }
+   
+plugin.tx_mmdamfilelist_pi1.listView.templateFile = list_view-address.html
+plugin.tx_mmdamfilelist_pi1.listView.use_alternate_searchbox = 1
+plugin.tx_mmdamfilelist_pi1.singleView.templateFile = single_view-address.html
+   
+plugin.tx_mmdamfilelist_pi1.typodbfield {
+	big_preview_image {
+		fieldtype = image
+		field = file_name
+		file.maxW = 600
+		file.maxH = 600
+		wrap = | <br/>
+	}
+
+	ziplink {
+		value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/download_zip.jpg" border="0" alt="Download as ZIP-File" title="Download as ZIP-File"/> 
+		}
+
+	normallink {
+		value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/download_normal.jpg" border="0" alt="Download" title="Download"/> 
+		}
+
+	details {
+		labelStdWrap.cObject.value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/details.jpg" border="0" alt="Details" title="Details"/>
+		labelStdWrap.cObject.data >
+		}
+
+	}   
+	
+plugin.tx_mmdamfilelist_pi1.addressfilter.10 = USER
+plugin.tx_mmdamfilelist_pi1.addressfilter.10 {
+	userFunc = tx_mmdamfilelist_pi1->getSubTableLinkWidget
+	
+	localconf.listView < plugin.tx_mmdamfilelist_pi1.listView
+	localconf.singleView < plugin.tx_mmdamfilelist_pi1.singleView
+	localconf.pidList < plugin.tx_mmdamfilelist_pi1.pidList
+	localconf.recursive < plugin.tx_mmdamfilelist_pi1.recursive
+
+	localconf.tablepid < plugin.tx_mmdamfilelist_pi1.address.address_pid
+	
+	localconf.tablename			= tt_address
+	localconf.fieldname			= company
+	//localconf.fieldname		= name,email
+	localconf.filterfield		= tx_mmdamfilelis_address_uid
+	
+	//localconf.elementtype		= list
+	localconf.elementtype		= combo
+		
+	localconf.linkfield			= link
+	localconf.linktarget		= _blank
+	//localconf.entry2remove	= --- nicht definiert ---,-- nicht definiert --,-- leer --
+		
+		
+	// comes from locallang.php
+	localconf.firstcomboentry	= firstcomboentry
+	localconf.label				= label.combo.address
+	//localconf.firstcomboentry	= - Bitt auswählen -
+	}
+
+plugin.tx_mmdamfilelist_pi1.addressfilter.wrap = <div id="addressfilter">|</div>
+
+//page.10.marks.addressfilter < plugin.tx_mmdamfilelist_pi1.addressfilter
+
+// Remember: With this TS-snippet you can change the labels:	
+//plugin.tx_mmdamfilelist_pi1._LOCAL_LANG.de {
+//	address_city = PLZ / Ort:
+//	}

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			var basepath = "";
+			var skinpath = "skins/nacht/nacht.swf";
+			var flashvars = {file:basepath + "video.flv",image:basepath + "preview.jpg",skin:basepath + skinpath};
+			var params = {allowfullscreen: "true", allowscriptaccess: "always", allownetworking: "all"};
+			var attributes = {};
+			
+			swfobject.embedSWF(basepath + "player.swf", "myAlternativeContent", "800", "600", "9.0.0",basepath +  "expressInstall.swf", flashvars, params, attributes);
+		</script>
+		<style>
+			.videoblock {
+				display: block;
+				padding: 0 0 1em 120px;
+				}
+			
+		</style>
+	</head>
+	<body>
+	
+		<div class="videoblock">
+		<div id="myAlternativeContent">
+			<a href="http://www.adobe.com/go/getflashplayer">
+				<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+			</a>
+		</div>
+		</div>
+	</body>
+</html>

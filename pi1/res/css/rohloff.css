@@ -1,0 +1,113 @@
+/*-------------------------------------------------------------------------
+* Buttons - MM DAM FileList
+*/
+
+.mm-dam-row-container .tx-mmdamfilelist-pi1-normallink a,
+.tx-mmdamfilelist-pi1-singleview .ziplink a,
+.tx-mmdamfilelist-pi1-singleview .normallink a,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-ziplink a,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-details a {
+      color: #0000ff;
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      padding: 2px;
+      }
+      
+.mm-dam-row-container .tx-mmdamfilelist-pi1-normallink a:hover,
+.tx-mmdamfilelist-pi1-singleview .ziplink a:hover,
+.tx-mmdamfilelist-pi1-singleview .normallink a:hover,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-ziplink a:hover,
+.mm-dam-row-container .tx-mmdamfilelist-pi1-details a:hover   {
+      background-color: transparent;
+      border: none;
+      text-decoration: none;
+      }
+
+
+/* -- Ende Buttons --------------------------------------------------- */
+.mm-dam-row-visible-container td {
+      	border: none;
+	}
+
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-title,
+.tx-mmdamfilelist-pi1-listrow .tx-mmdamfilelist-pi1-title a {
+	color: #161848;
+	}
+
+.mm-dam-row-visible-container,
+.mm-dam-row-hidden-container {
+	margin-left: 5px;
+	padding-left: 0;
+	}
+
+.mm-dam-row-visible-container td,
+.mm-dam-row-hidden-container td {
+	margin-left: 0px;
+	padding-left: 0;
+	}
+
+.mm-dam-row-description-container {
+	float: left;
+	}
+
+.col-fileinfo div, .col-linksdetails div {
+	display: inline;	
+	}
+
+.col-linksdetails {
+	display: block;
+	text-align: right;
+	}	
+	
+.col-baseinfo {
+	float: left;
+	}	
+
+/*
+.mm-dam-row-datacontainer hr {
+	padding: 0;
+	margin: 0;
+	}
+
+.mm-dam-row-visible-container hr {
+	border: 0;
+	border-top: 1px solid #171949;
+	border-bottom: solid 1px #FFFFFF; 	
+
+	padding: 0;
+	margin-top: 0.25em;	
+	margin-bottom: 0.25em;	
+	clear: both;
+}
+*/
+
+/*-------------------------------------------------------------------------
+* Address-Container
+*/
+/*
+#address-container {
+	float: right;
+	}
+*/
+	
+#address-container table {
+	width: 300px;
+	}
+		
+.tx-mmdamfilelist-pi1-singleview-address div.big_preview_image {
+	text-align: left;
+	float: left;
+	padding-right: 1em;
+	}
+	 
+.mm-dam-row-container-row-address .tx-mmdamfilelist-pi1-title {
+	display: inline;
+	}	
+	
+.mm-dam-row-container-row-address .tx-mmdamfilelist-pi1-address_company {
+	display: inline;
+	}
+	
+/* -- Ende Address-Container -------------------------------------------- */

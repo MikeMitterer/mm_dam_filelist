@@ -1,0 +1,197 @@
+<?php
+
+/**
+ *
+ * aeUrlTool default realurl configuration
+ * based on realurl-configuration of news.typo3.org
+ * 	http://news.typo3.org/about/realurl-configuration/
+ *
+ */
+
+/**
+*	Take the sample code which is markt with "// MM DAM FileList - begin"
+	and "// MM DAM FileList - end" and copy it to you localconf.php
+	or use the extension "urltool" to mage the realurl settings.
+	
+	IMPORTANT: Disable caching in the plugin-settings.
+	(Basesettings / Turn caching on: [] ) 
+	Otherwise the results will be wrong or you will get a typo3 error message...	
+
+*/
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl'] = array ( 
+    '_DEFAULT' => array (
+        'init' => array (
+            'enableCHashCache' => '0',
+            'appendMissingSlash' => 'ifNotFile',
+            'enableUrlDecodeCache' => '0',
+            'enableUrlEncodeCache' => '0',
+        ),
+        'redirects' => array (
+        ),
+        'preVars' => array (
+            '0' => array (
+                'GETvar' => 'no_cache',
+                'valueMap' => array (
+                    'nc' => '1',
+                ),
+                'noMatch' => 'bypass'
+            ),
+            '1' => array (
+                'GETvar' => 'L',
+                'valueMap' => array (
+                    'de' => '0',
+                    'en' => '1',
+                ),
+                'noMatch' => 'bypass',
+            ),
+            '2' => array (
+                'GETvar' => 'lang',
+                'valueMap' => array (
+                    'de' => 'de',
+                    'en' => 'en',
+                ),
+                'noMatch' => 'bypass',
+            ),
+        ),
+        'pagePath' => array (
+            'type' => 'user',
+            'userFunc' => 'EXT:realurl/class.tx_realurl_advanced.php:&tx_realurl_advanced->main',
+            'spaceCharacter' => '-',
+            'languageGetVar' => 'L',
+            'expireDays' => '7',
+            'rootpage_id' => '1',
+        ),
+        'fixedPostVars' => array (
+        ),
+        'postVarSets' => array (
+            '_DEFAULT' => array (
+                'archive' => array (
+                    '0' => array (
+                        'GETvar' => 'tx_ttnews[year]',
+                    ),
+                    '1' => array (
+                        'GETvar' => 'tx_ttnews[month]',
+                        'valueMap' => array (
+                            'january' => '01',
+                            'february' => '02',
+                            'march' => '03',
+                            'april' => '04',
+                            'may' => '05',
+                            'june' => '06',
+                            'july' => '07',
+                            'august' => '08',
+                            'september' => '09',
+                            'october' => '10',
+                            'november' => '11',
+                            'december' => '12',
+                        ),
+                    ),
+                ),
+                'browse' => array (
+                    '0' => array (
+                        'GETvar' => 'tx_ttnews[pointer]',
+                    ),
+                ),
+                'select_category' => array (
+                    '0' => array (
+                        'GETvar' => 'tx_ttnews[cat]',
+                    ),
+                ),
+                'article' => array (
+                    '0' => array (
+                        'GETvar' => 'tx_ttnews[tt_news]',
+                        'lookUpTable' => array (
+                            'table' => 'tt_news',
+                            'id_field' => 'uid',
+                            'alias_field' => 'title',
+                            'addWhereClause' => ' AND NOT deleted',
+                            'useUniqueCache' => '1',
+                            'useUniqueCache_conf' => array (
+                                'strtolower' => '1',
+                                'spaceCharacter' => '-',
+                            ),
+                        ),
+                    ),
+                    '1' => array (
+                        'GETvar' => 'tx_ttnews[swords]',
+                    ),
+                ), // article
+                
+		// MM DAM FileList - begin
+		'viewmode' => array(
+			'0' => array( 
+				'GETvar' => 'tx_mmdamfilelist_pi1[viewmode]' ,
+				'userFunc' => 'EXT:mm_dam_filelist/pi1/class.tx_mmdamfilelist_realurl.php:&tx_mmdamfilelist_realurl->main',
+				),
+			), // viewmode
+			
+		'mode' => array(			
+			'0' => array(
+				'GETvar' => 'tx_mmdamfilelist_pi1[mode]' ,
+				'userFunc' => 'EXT:mm_dam_filelist/pi1/class.tx_mmdamfilelist_realurl.php:&tx_mmdamfilelist_realurl->main',
+				),
+			), // mode
+			
+		'showuid' => array(			
+			'0' => array(
+				'GETvar' => 'tx_mmdamfilelist_pi1[showuid]' ,
+				),
+			), // showUid 
+
+		'pointer' => array(			
+			'0' => array(
+				'GETvar' => 'tx_mmdamfilelist_pi1[pointer]' ,
+				),
+			), // pointer 
+			
+		'oldmode' => array(			
+			'0' => array(
+				'GETvar' => 'tx_mmdamfilelist_pi1[oldmode]' ,
+				),
+			), // oldmode 
+
+		'sword' => array(			
+			'0' => array(
+				'GETvar' => 'tx_mmdamfilelist_pi1[sword]' ,
+				),
+			), // sword
+			
+			
+		// MM DAM FileList - end
+                
+            ), // _DEFAULT
+        ), // postVarSets
+        'fileName' => array (
+//
+// if you don't want .html-URLs set the following to "false" (e.g. 'defaultToHTMLsuffixOnPrev' => false,)
+// then you get http://www.yourdomain.com/imprint/ instead of http://www.yourdomain.com/imprint.html
+//
+            'defaultToHTMLsuffixOnPrev' => false,
+            'index' => array (
+                'rss.xml' => array (
+                    'keyValues' => array (
+                        'type' => '100',
+                    ),
+                ),
+                'rss091.xml' => array (
+                    'keyValues' => array (
+                        'type' => '101',
+                    ),
+                ),
+                'rdf.xml' => array (
+                    'keyValues' => array (
+                        'type' => '102',
+                    ),
+                ),
+                'atom.xml' => array (
+                    'keyValues' => array (
+                        'type' => '103',
+                    ),
+                ),
+            ),
+        ),
+    ),
+
+); 
+
+?>

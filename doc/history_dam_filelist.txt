@@ -1,0 +1,19 @@
+Version 1.0.6
+				Implementation of realurl-settings
+				Finetuning with tt_address connection,
+				Created ext_conf_template.txt to turn on/off the tt_address connection
+Version 1.0.5
+	08.04.28	Added the tt_address connection
+				typodbfield - link, protocoll will be added automaticaly	
+	
+Version 1.0.2
+				Gallery-View - Sponsor: www.rohloff.de
+				
+Version 0.8.0
+	07.10.??	Big change. Adde autgenerate menu for categories	
+	07.11.22	Started this file
+				Added some descriptions for ...-viewselector-desc, ...-orderselector-desc...,...-modeselector-desc
+				 
+	07.12.04	Added number-sign for ^[0-9]{3,}. - Articles
+				Changed the position of group and extension in the list_view.tmpl
+			

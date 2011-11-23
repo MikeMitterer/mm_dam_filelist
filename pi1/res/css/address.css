@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+.tx-mmdamfilelist-pi1-modeselector div,
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell {
+	display: block;
+	}
+	
+.tx-mmdamfilelist-pi1-modeselector {
+	padding: 0px;
+	}
+	
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell {
+	background-color: inherit;
+	border: none;
+	padding: 0px;
+	text-decoration: none;
+	display: block;
+    
+	}
+	
+.tx-mmdamfilelist-pi1-modeselector .tx-mmdamfilelist-pi1-modeSelector-SCell a {
+	color: inherit;
+	}
+	
+select.tx-mmdamfilelist-pi1-modeselector,
+.tx-mmdamfilelist-pi1-filterselector select {
+	width: 200px;
+	}	
+	
+.tx-mmdamfilelist-pi1-filterselector {
+	padding: 0.25em 0 0.25em 0;
+	border-top: 2px solid #ffffff;
+	}	
+
+.tx-mmdamfilelist-pi1-searchbox {
+	border-top: 2px solid #ffffff;
+	}
+	
+.tx-mmdamfilelist-pi1-searchbox-label,
+.tx-mmdamfilelist-pi1-modeselector .label,
+.tx-mmdamfilelist-pi1-filterselector .label {
+	float: left;
+	width: 120px;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: right;
+	padding-right: 1em;
+	}
+
+.tx-mmdamfilelist-pi1-searchbox-label1 {
+	float: left;
+	}
+	
+.tx-mmdamfilelist-pi1-modeselector select,
+.tx-mmdamfilelist-pi1-filterselector select,
+.tx-mmdamfilelist-pi1-searchbox input[type=text],
+.tx-mmdamfilelist-pi1-searchbox input[type=submit] {
+	border: 1px solid #C0C0C0;
+	}
+
+* + html .tx-mmdamfilelist-pi1-searchbox input[type=text] { width:234px;  }
+
+.tx-mmdamfilelist-pi1-searchbox input[type=text] {
+	width: 236px;
+	margin: 3px 0 3px 0;
+	}
+
+.tx-mmdamfilelist-pi1-searchbox input[type=submit] {
+	width: 238px;
+	}
+
+.tx-mmdamfilelist-pi1-modeselector select,
+.tx-mmdamfilelist-pi1-filterselector select {
+	width: 235px;
+	}
+
+* html .tx-mmdamfilelist-pi1-searchbox-button-container { padding-left: 123px;  }
+
+* + html .tx-mmdamfilelist-pi1-searchbox-button-container,
+.tx-mmdamfilelist-pi1-searchbox-button-container {
+	padding-left: 135px;
+	}
+	
+.tx-mmdamfilelist-pi1-filterselector {
+	background-color: #EEEEEE;
+	}
+		
+.tx-mmdamfilelist-pi1-selector-box {
+	border: 1px solid #C0C0C0;
+	padding: 0;
+	margin-bottom: 1em;
+	width: 380px;
+	background-color: #F8F8F8;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview-address div.big_preview_image {
+	float: none;
+	text-align: center;
+	}
+
+	
+.tx-mmdamfilelist-pi1-singleview .description {
+	width: 100%;
+	}
+
+div.tx-mmdamfilelist-pi1-modeselector,
+div.tx-mmdamfilelist-pi1-filterselector,
+div.tx-mmdamfilelist-pi1-searchbox {
+	padding: 0.20em;
+	}
+	
+.tx-mmdamfilelist-pi1-singleview .line .label {
+	width: 80px;
+	}

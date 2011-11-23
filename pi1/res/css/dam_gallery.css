@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+.tx-mmdamfilelist-pi1 .tx-mmdamfilelist-pi1-preview {
+	height: 120px;
+	}	
+	
+.tx-mmdamfilelist-pi1 .mm-dam-gal-item-container {
+	float:left;
+	margin-bottom: 1em;
+	/*
+	width: 140px;
+	margin-right: 1em;
+	*/
+}
+
+.tx-mmdamfilelist-pi1 .col-prevcontainer {
+	background-color: #EBEBEB;
+	border: 1px solid #CBCBCB;
+	padding: 0.5em;
+	}
+	
+.tx-mmdamfilelist-pi1 .col-linksdetails {
+	text-align: right;
+	}
+	
+.tx-mmdamfilelist-pi1 .col-linksdetails div {
+	display: inline;
+	}
+	
+.tx-mmdamfilelist-pi1 .col-additionaldata-container	.tx-mmdamfilelist-pi1-title {
+	text-align: left;
+	font-weight: normal;
+	font-size: 11px;
+	color: #3F3F3F;
+	}
+	
+.tx-mmdamfilelist-pi1 .mm-dam-row-container-row .tx-mmdamfilelist-pi1-image img {
+	border: 2px solid #DDDDDD;
+	}	
+	
+/*-------------------------------------------------------------------------
+* Details
+*/
+
+
+
+/* -- Ende Details --------------------------------------------------- */
+

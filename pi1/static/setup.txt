@@ -1,0 +1,412 @@
+//-------------------------------------------------------------------
+// BASE - Settings for mm_dam_filelist
+//
+
+plugin.tx_mmdamfilelist_pi1 {
+	// Allows Caching for this plugin
+	allowCaching = 1
+	//allowAutoCache = 1 // experimental!!!! 09 04 20
+
+	// If set, the "no_cache" entry in the browser-result-line (Page1, Page2...) will be removed
+	remove_no_cache_browserresults = 0
+	
+	// Good for "normal" Plugins - but bad for DAM - so enable this setting for DAM
+	turnOffDifferentLanguagesInOneFolder = true
+	
+	// If a file exists in DAM but not in the filesystem it will be hidden
+	hideNotExistingFile = true
+	
+	// Set the language for the plugin
+	# language = <value from config.language>
+	
+	CMD =
+	pidList =
+	recursive =
+	view_mode = list
+	add_modeswitch_listview = 0
+	add_modeswitch_treeview = 0
+	add_modeswitch_category = 0
+	add_modeswitch_toplistview = 0
+	
+	// It is important to use the tablename AND the fieldname
+	// Othwerwise such fields like keywords could make problems!
+	searchFieldList = tx_dam.title,tx_dam.file_name,tx_dam.file_path,tx_dam.keywords,tx_dam.description
+
+	showOrderSelector = 1
+
+	// These fields are available for sorting	
+	// The description for this field is taken from locallang.php
+	//	<fieldname>_orderselector
+	orderselector1 = tx_dam.title
+	orderselector1_desc_flag = 0
+	orderselector2 = tx_dam.title
+	orderselector2_desc_flag = 1
+	
+	orderselector3 = file_size
+	orderselector3_desc_flag = 0
+	orderselector4 = file_size
+	orderselector4_desc_flag = 1
+	
+	orderselector5 = date_mod
+	orderselector5_desc_flag = 0
+	orderselector6 = date_mod
+	orderselector6_desc_flag = 1
+
+	// Important!!! - the fieldnames used above must bin in the orderByList tool
+	orderByList = tx_dam.title,uid,file_name,file_size,date_mod,date_cr,file_ctime
+	
+	// Ordering can be set like this too (field must be in orderByList)
+	order = file_name:0
+	//order = date_mod:1
+	
+	// You can ovwerwrite the path to the iconsets here 
+	//iconset_mimetypes = fileadmin/template/images/22x22/mimetypes/
+	//iconset_filesystem = fileadmin/template/images/22x22/filesystem/
+	//iconset_navigation = fileadmin/template/dam/blackbg/22x22/navigation/
+	//iconset_extension = .gif
+	
+	// add_modeswitch_toplistview needs these settings
+	// Fieldname must be in orderByList!!!!!
+	toplist_field = date_mod
+	toplist_desc_flag = 1
+	toplist_number_of_results = 15
+	toplist_turnoff_orderselector = 0
+	
+	// All results are grouped by this setting
+	group_results_by = file_name
+	// Only search-results are grouped by this setting
+	group_search_results_by = file_name
+	
+	// If the first character in the title is a number then add a # sign
+	add_number_sign_to_title = 0
+	
+	// Turns the two links on or off
+	show_download_link = 1
+	show_zip_link = 1
+	show_details_link = 1
+	
+	// Do not show default Listing of files if piVars are not set.
+	// Show empty page if no piVars are set
+	show_empty_page_if_no_pivars = 0
+	
+	// XAJAX
+	use_ajax = 0
+	
+	// Jump to this page to show the single-View
+	singlePid = 0
+	
+	show_filter = 0
+	
+	// Replaces blanks in modeselectors (categories) with &nbsp; (avoids linebreaks in IE)
+	replace_blank_in_modeselectors = 1
+	}
+	
+plugin.tx_mmdamfilelist_pi1.listView {
+	results_at_a_time = 4
+	maxPages =
+	colsOnPage = 2
+	showSearchBox = 0
+	showModeSelector = 1
+	showBrowserResults = 1
+	showHeader = 0
+	dontLinkActivePage = 1
+	showFirstLast = 0
+	pagefloat = CENTER
+	
+	// Baspath is the extensions /pi1/res/ folder
+	templateFile = list_view.html
+	#templateFile = list_view-rohloff.html
+	
+	// Avoids to put a table tag around the Template-Content
+	avoidTableTagAroundContent = 1
+	
+	// Width of Column
+	col_width_style = 100%
+	
+	// Uses a div based searchbox
+	// use_alternate_searchbox = 1
+	}
+
+plugin.tx_mmdamfilelist_pi1.singleView {
+	templateFile = single_view.html
+	
+	dateformat = Y/m/d
+	
+	// With displayOrder you can define the order of the fields in the single View
+	// if not defined then the table-structure is the base for order of the fields
+	// If you use a marker - The text right of the keyword marker ist used as a lable
+	// If you have an entry in you locallang.php with marker_<Marker Text> this entry overwrites
+	// the text from the brackets
+	// displayOrder = [marker Description], name, groupname, shorttext, description, [marker Contact], phone, fax, email, image, web
+	
+	substitutePagetitle = 1	
+	}
+
+plugin.tx_mmdamfilelist_pi1.treeView {
+	// Baspath is the extensions /pi1/res/ folder
+	templateFile = list_tree_view.html
+	
+	// Basepath for TreeView
+	basepath_for_folders = fileadmin/redaktion/
+	}
+
+plugin.tx_mmdamfilelist_pi1.catView {
+	// Baspath is the extensions /pi1/res/ folder
+	templateFile = cat_tree_view.html
+	}
+
+//------------------------------------------------------------------------------
+// Sample for inserting the menu into your page:
+//		plugin.tx_mmdamfilelist_pi1.catTree.startuid = 6 (UID where the iteration starts)
+//		page.10.subparts.navi_dam_cat < plugin.tx_mmdamfilelist_pi1.catTree
+//
+plugin.tx_mmdamfilelist_pi1.catTree = USER
+plugin.tx_mmdamfilelist_pi1.catTree {
+	userFunc = tx_mmdamfilelist_pi1->getCategoryTree
+	localconf < plugin.tx_mmdamfilelist_pi1
+	
+	// not necessary  
+	localconf.additionalHeaderData >	
+	localconf.JSOnLoadFunction >	
+	}
+//page.10.subparts.navi_dam_cat < plugin.tx_mmdamfilelist_pi1.catTree
+	
+plugin.tx_mmdamfilelist_pi1.getViewSelector = USER
+plugin.tx_mmdamfilelist_pi1.getViewSelector {
+	userFunc = tx_mmdamfilelist_pi1->getViewSelectorTS
+	
+	localconf < plugin.tx_mmdamfilelist_pi1
+	localconf.add_modeswitch_listview = 0
+	localconf.add_modeswitch_treeview = 0
+	localconf.add_modeswitch_category = 0
+	localconf.add_modeswitch_toplistview = 1	
+	
+	// not necessary  
+	localconf.additionalHeaderData >	
+	localconf.JSOnLoadFunction >	
+	}	
+//page.10.subparts.dam_viewselector < plugin.tx_mmdamfilelist_pi1.getViewSelector
+
+plugin.tx_mmdamfilelist_pi1.greybox {
+	script = /typo3conf/ext/mm_dam_filelist/pi1/showvideo.php
+	video {
+		width=960
+		height=768
+		title = Video
+		}
+	box {
+		width=990
+		height=810
+		}
+	}
+//------------------------------------------------------------------------------
+// The supportet fieldnames for typodbfield
+// are: image, link, filelink, stdwrap, singlelink
+//
+plugin.tx_mmdamfilelist_pi1.typodbfield {
+	// Dummyfields are not in the DB but if they are 
+	// in here a fieldvalue ist requestet for them in 
+	// the framework
+	// dummyfieldslist became obsolete with a new functionionality in bccsmsbase 29.4.08
+	// dummyfieldlist = pureuid,preview,ziplink,normallink,cattitle,big_preview_image,details,shortdescription,more,progressbar,col_width,address_name
+	
+	pureuid {
+		field = uid
+	}
+		
+	// Remove the underline if you want to have a preview picture
+	preview {
+		fieldtype = image
+		useMIMEImage = 0
+		
+		field = file_name
+		file.width = 101m
+		file.height = 100m
+		//file.maxW = 100
+		//file.maxH = 100
+		#file.sample = 1
+		wrap = | <br/>
+	  	# stdWrap {
+	  	# wrap = aaa | ee
+	  	# typolink.additionalParams.field = uid
+	  	# typolink.parameter.field = uid
+	  	# }
+	  	
+	  imageLinkWrap = 1
+	  secure = 0
+	  imageLinkWrap {
+			#bodyTag = <BODY bgColor=black>
+			wrap = <A href="javascript:close();"> | </A>
+			width = 500m
+			height = 800m
+			JSwindow = 1
+			JSwindow.newWindow = 1
+			JSwindow.expand = 17,20
+			enable = 1
+    	}
+	}
+	
+	// You can change the content of dummyfield with an entry for 'field'
+	// The Tablename for field must exist as a Table-Fieldname
+	// TS-Sample: 
+	// plugin.tx_mmreflist_pi1.typodbfield.dummyfieldlist = preview
+	// plugin.tx_mmreflist_pi1.typodbfieldpreview.field = image
+	big_preview_image {
+		fieldtype = image
+		field = file_name
+		file.maxW = 500
+		file.maxH = 500
+		wrap = | <br/>
+	}
+		
+	title {
+		fieldtype = stdwrap1
+		typolink {
+			path = /typo3con/mm_bccmsbase/include/phphelper/zip.php
+			labelStdWrap = Test
+			}
+		}
+	email {
+		}
+	web < .email
+	
+	# Example for a filelink
+	pdffile {	
+		fieldtype = filelink
+		path = uploads/$pluginname/ 
+		path2 = uploads/media/
+		icon = 1
+		size = 1
+		size.wrap = ( | )
+		jumpurl = 1
+		jumpurl.secure = 1
+		target = _blank
+		
+		# Add Labletext instead of Filename
+		# labelStdWrap.cObject = TEXT
+		# labelStdWrap.cObject.value = Mike
+		}
+		
+	ziplink {
+		#value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/download_zip.jpg" border="0" alt="Download as ZIP-File" title="Download as ZIP-File"/> 
+		#value = As ZIP-File
+		value = listview.ziplink
+		}
+		
+	normallink {
+		#value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/download_normal.jpg" border="0" alt="Download" title="Download"/> 
+		#value = Download
+		value = listview.normallink
+		
+		}
+	
+	// Sample for linking a preview-image to the "normal" downloadabel file
+	// Use this: <div ###PREVNORMALLINK_CLASS###>###PREVNORMALLINK###</div> as the placeholder in your template
+	//prevnormallink {
+	//	fieldtype = image
+	//	useMIMEImage = 0
+	//	
+	//	field = file_name
+	//	file.width = 100m
+	//	file.height = 300m
+	//		
+	//	field = file_name
+	//	}
+			
+	file_mtime {
+		fieldtype = stdwrap
+		strftime = %Y.%m.%d
+		field = file_mtime
+		#strftime = %d.%m.%Y
+		# Formatspecification: http://at.php.net/strftime
+		}
+		
+	file_ctime < .file_mtime
+	file_ctime.field = file_ctime
+	
+	date_cr < .file_mtime
+	date_cr.field = date_cr
+	
+	date_mod < .file_mtime
+	date_mod.field = date_mod
+	
+	details {
+		singlelink = 1
+		labelStdWrap.cObject = TEXT
+		#labelStdWrap.cObject.value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/details.jpg" border="0" alt="Details" title="Details"/>
+		#labelStdWrap.cObject.value = Details
+		labelStdWrap.cObject.data = LLL:EXT:mm_dam_filelist/pi1/locallang.php:listview.details
+		}
+		
+	shortdescription {
+		fieldtype = stdwrap
+		field = description
+		crop = 200 | ...
+	    }
+	    
+	more {
+		singlelink = 1
+		labelStdWrap.cObject = TEXT
+		#labelStdWrap.cObject.value = [more]
+		labelStdWrap.cObject.data = LLL:EXT:mm_dam_filelist/pi1/locallang.php:listview.more
+		}
+		
+	progressbar {
+		fieldtype = text
+		value = <img src="/typo3conf/ext/mm_dam_filelist/pi1/res/images/misc/progressbar.gif" border="0" alt="Progressbar" title="Progressbar"/>
+		}
+		
+	col_width {
+		value = --dummy-- 
+		}	
+		
+	address_name { 
+		value = --dummy--
+		}
+	
+	address_zip { 
+		value = --dummy--
+		}
+		
+	address_city { 
+		value = --dummy--
+		}
+		
+	address_address { 
+		value = --dummy--
+		}
+		
+	address_company { 
+		value = --dummy--
+		}
+		
+	address_www {
+		fieldtype = link
+		target = _blank
+		}
+		
+	playerpath {
+		value = /typo3conf/ext/mm_dam_filelist/pi1/res/mediaplayer
+		}		
+		
+	greybox {
+		value = --dummy --
+		}
+	}
+
+plugin.tx_mmdamfilelist_pi1.address {	
+	address_pid = -1	
+	}
+
+
+  # Example of how to overrule LOCAL_LANG values for the plugin:
+plugin.tx_mmdamfilelist_pi1._LOCAL_LANG.default {
+  pi_list_searchBox_search = Search!
+}
+  # Example of how to set default values from TS in the incoming array, $this->piVars of the plugin:
+#plugin.tx_mmdamfilelist_pi1._DEFAULT_PI_VARS.test = test
+
+# Example of default set CSS styles (these go into the document header):
+#plugin.tx_mmdamfilelist_pi1._CSS_DEFAULT_STYLE (
+# .tx-mmdamfilelist-pi1-singleview .line .label { text-align: right; }
+#)

@@ -1,0 +1,87 @@
+#nav {
+	padding: 0 0 0 19px;
+	}
+	
+#nav ul {	
+	padding: 0;
+	}
+	
+#nav, #nav ul {
+	width: 575px;
+	float: left;
+	list-style: none;
+	line-height: 13px;
+	background: #00532E;
+	color: #ffffff;
+	margin: 0 0 20px 0;
+}
+ 
+#nav a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 3px 0px;
+}
+ 
+#nav li li.menuparent {
+	background: url(../images/arrow.gif) no-repeat 85% 40%;
+}
+
+/* ----------------------------------------------------------------------------
+Oberste Ebene
+-----------------------------------------------------------------------------*/
+#nav li {
+	float: left;
+	padding: 0 27px 0 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+ 
+/* ----------------------------------------------------------------------------
+Breiten aller Untermenüpunkte
+-----------------------------------------------------------------------------*/
+#nav li ul,#nav li li,#nav li ul a {
+	width: 190px;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#nav li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	font-weight: normal;
+	margin: 0;
+
+	border: 1px solid #0f201b;		
+	border-left-color: #006a3a;	
+	border-top-color: #006a3a;	
+}
+ 
+ 
+#nav li ul a {
+	padding-left: 1em;
+}
+ 
+#nav li ul ul {
+	margin: -3px 0px 0px 60px;
+		/*
+		Letzter Wert ist der abstand zum vorhergehenden Untermenü
+		*/
+}
+ 
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+ 
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+	left: auto;
+}
+ 
+#nav .active a {
+	color: #FDCC00;
+	}
+	 
+#nav li:hover, #nav li.sfhover{
+		color: #FDCC00;
+	}

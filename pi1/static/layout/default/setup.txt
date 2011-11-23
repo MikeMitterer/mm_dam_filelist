@@ -1,0 +1,25 @@
+//-------------------------------------------------------------------
+// Settings for Layout I (default)
+//
+
+// If you have a navi_dam_cat-subpart in your Template the catTree will
+// be inserted.
+// If you have something like this: <div id="navi_dam_cat"></div>
+// Autoform does the rest for you.
+page.10.subparts.navi_dam_cat < plugin.tx_mmdamfilelist_pi1.catTree
+
+plugin.tx_mmdamfilelist_pi1 {
+	#JSOnLoadFunction = onLoadKENTBREW();
+	JSOnLoadFunction.1 = onLoadKENTBREW();
+	
+	// Needed if you implement menu.js
+	//JSOnLoadFunction.2 = IEHoverPseudo();
+	}
+	
+plugin.tx_mmdamfilelist_pi1 {
+	#additionalHeaderData = pi1/res/css/base.css
+	additionalHeaderData.1 = pi1/res/javascript/toggle.js
+	#additionalHeaderData.2 = pi1/res/javascript/mmdam_ajax.js
+	additionalHeaderData.3 = pi1/res/css/base.css
+	additionalHeaderData.4 = pi1/res/css/buttons.css
+	}

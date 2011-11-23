@@ -1,0 +1,159 @@
+<!--###TEMPLATE_DEFAULT### begin
+	Help template for the default language, english
+-->
+<!--###BIG_PREVIEW### begin -->
+---- START ---<br/>
+###BIG_PREVIEW_IMAGE###
+<br/>----- STOP ---
+<!--###BIG_PREVIEW### end -->
+
+<!-- ModeSelector (Categories) -->
+<!--###MODE_SELECTOR### begin -->
+<div ###MODESELECTORCLASS###>
+	
+	<script type="text/javascript">
+		function onSelectModeCombo(combo) {
+		  var urlFromCombo = combo.options[combo.selectedIndex].value;
+		  //alert(urlFromCombo);
+		  if(urlFromCombo != '') window.location.href = "/" + urlFromCombo;   
+		}
+	</script>
+	
+	<div class="label">###LABEL###</div>
+	<select size="1" ###MODESELECTORCLASS### onChange="javascript:onSelectModeCombo(this);">
+		<!--###SELECTOR### begin -->
+			<option value="###SELECTOR_ELEMENT_HREF###" ###SELECTOR_ELEMENT_CLASS### ###SELECTED###>###SELECTOR_ELEMENT_TEXT###
+		<!--###SELECTOR### end -->
+	</select>
+</div>
+<!--###MODE_SELECTOR### end -->
+
+<!-- OrderSelector -->
+<!--###ORDER_SELECTOR### begin -->
+<div ###ORDERSELECTORCLASS###>
+	<!--###SELECTOR### begin -->
+	<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+	<!-- Text-Alternativ
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	-->
+	<!--###SELECTOR### end -->
+</div>
+<!--###ORDER_SELECTOR### end -->
+
+<!-- ViewSelector -->
+<!--###VIEW_SELECTOR### begin -->
+<div ###VIEWSELECTORCLASS###>
+	<!--###VIEWSELECTORELEMENTS### begin -->
+		<!--###SELECTOR_TOPLIST### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_TOPLIST### end -->
+		<!--###SELECTOR_LIST### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_LIST### end -->
+		<!--###SELECTOR_TREE### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT_IMG###</div>
+		<!-- Text-Alternativ
+			<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+		-->
+		<!--###SELECTOR_TREE### end -->
+	<!--###VIEWSELECTORELEMENTS### end -->	
+</div>
+<!--###VIEW_SELECTOR### end -->
+
+<!-- FilterSelector -->
+<!--###FILTER_SELECTOR### begin -->
+<div ###FILTERSELECTORCLASS###>
+	<!--###FILTERSELECTORELEMENTS### begin -->
+		<div ###SELECTOR_ELEMENT_CLASS###>###SELECTOR_ELEMENT###</div>
+	<!--###FILTERSELECTORELEMENTS### end -->	
+</div>
+<!--###FILTER_SELECTOR### end -->
+
+<div class="dam_listview_container">
+  <!--###LIST_HEADER### begin -->
+  <div ###HEADERCLASS###> 
+    <div>###HEADER_UID###</div><!-- looks for listFieldHeader_uid in locallang.php -->
+    <div>###HEADER_FILE_NAME###</div>
+  </div>
+  <!--###LIST_HEADER### end -->
+  <!--###LIST_ROW### begin -->
+  <div ###ROWCLASS###>
+  	<!--###LIST_COL### begin -->
+  	<div ###COLCLASS###><!-- negativ value means empty col -->
+  	<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-row-container" style="width: ###COL_WIDTH###;">
+  	
+  	<tr class="mm-dam-row-container-row mm-dam-row-container-row-address">
+		<td class="col1">
+			<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-row-datacontainer">
+			<tr>
+				<td class="col0">
+					<table border="0" cellspacing="0" cellpadding="0" class="mm-dam-row-visible-container">
+					<tr>
+						<td>
+							<div class="col-baseinfo">
+								<div ###TITLE_CLASS###>###TITLE###</div> | <div ###ADDRESS_COMPANY_CLASS###>###ADDRESS_COMPANY###&nbsp;</div>
+								<div><span ###PUBLISHER_CLASS###>###PUBLISHER###</span></div>
+							</div>
+							<div class="col-linksdetails">
+								<div ###NORMALLINK_CLASS###>###NORMALLINK###</div>
+								<div ###ZIPLINK_CLASS###>###ZIPLINK###</div>
+							</div>
+							<hr class="clearer"/>
+							<div class="mm-dam-row-description-container">
+								<div ###SHORTDESCRIPTION_CLASS###>###SHORTDESCRIPTION###</div>
+								<div ###MORE_CLASS###>###MORE###</div>
+							</div>
+						</td>
+					</tr>
+					</table>
+				</td>
+			</tr>	
+			</table>
+		</td>
+		<td class="col-prevcontainer" width="100">
+		    <div ###PREVIEW_CLASS###>###PREVIEW###</div>
+		</td>
+	</tr>
+	</table>
+  	</div>
+  	<!--###LIST_COL### end -->
+  </div><br class="clearer"/>
+  <!--###LIST_ROW### end -->
+</div>
+
+<!-- ###LIST_SELECTOR### begin -->
+	<div class="scroll">
+		<ul class="###SELECTOR_NAME###">
+		<!-- ###SELECTOR_ITEM### begin -->
+			<li>###SELECTOR_ITEM_LINK###</li>
+		<!-- ###SELECTOR_ITEM### end -->
+		</ul>
+	</div>
+<!-- ###LIST_SELECTOR### end -->
+
+<!-- ###COMBO_SELECTOR### begin -->
+	<div class="combo">
+	<script type="text/javascript">
+	function onSelect(combo) {
+		  var urlFromCombo = combo.options[combo.selectedIndex].value;
+		  //alert(urlFromCombo);
+		  if(urlFromCombo != '') window.location.href = "/" + urlFromCombo;   
+		}
+	</script>
+	<div class="label">###LABEL###</div>
+	<select name="###SELECTOR_NAME###" class="###SELECTOR_NAME###" onChange="javascript:onSelect(this);">
+		<option value="###FIRSTCOMBOENTRY_LINK_URL###">###FIRSTCOMBOENTRY###</option>
+	<!-- ###SELECTOR_ITEM### begin -->
+		<option value="###SELECTOR_ITEM_LINK_URL###" ###SELECTED###>###VALUE###</option>
+	<!-- ###SELECTOR_ITEM### end -->
+	</select>
+	</div>
+<!-- ###COMBO_SELECTOR### end -->
+
+<!--###TEMPLATE_DEFAULT### end -->
